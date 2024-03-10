@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6i3vjds2pyxo"
+path="res://.godot/imported/Fonine_muzika_try_7.mp3-53f996d6e2982448d5ba87a5b2208640.mp3str"
+
+[deps]
+
+source_file="res://Audio/Background music/Fonine_muzika_try_7.mp3"
+dest_files=["res://.godot/imported/Fonine_muzika_try_7.mp3-53f996d6e2982448d5ba87a5b2208640.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
