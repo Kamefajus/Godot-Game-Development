@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clhljkmwscg3b"
-path="res://.godot/imported/AnimationSheet_Character.png-9ef5cc79bae5497c9b4900ac306bec75.ctex"
+uid="uid://jqnrtnghbmc2"
+path="res://.godot/imported/barrel.png-4bf1e8f9ab149ec4fa07613049b6353d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Textures/AnimationSheet_Character.png"
-dest_files=["res://.godot/imported/AnimationSheet_Character.png-9ef5cc79bae5497c9b4900ac306bec75.ctex"]
+source_file="res://Art/Models/barrel.png"
+dest_files=["res://.godot/imported/barrel.png-4bf1e8f9ab149ec4fa07613049b6353d.ctex"]
 
 [params]
 

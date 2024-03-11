@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lq804wetett2"
-path="res://.godot/imported/main_lev_buildA.png-dc4f1fcf61a5d345c7e88bb80f8d8acc.ctex"
+uid="uid://d3geyxkcfbgvs"
+path="res://.godot/imported/enemy1.png-97946c30b6c4832b67f422befad7a13e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Textures/main_lev_buildA.png"
-dest_files=["res://.godot/imported/main_lev_buildA.png-dc4f1fcf61a5d345c7e88bb80f8d8acc.ctex"]
+source_file="res://Art/Models/enemy1.png"
+dest_files=["res://.godot/imported/enemy1.png-97946c30b6c4832b67f422befad7a13e.ctex"]
 
 [params]
 
