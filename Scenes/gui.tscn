@@ -8,5 +8,5 @@
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_right = 1156.0
-offset_bottom = 647.0
+offset_bottom = 107.0
 script = ExtResource("1_m8lon")
