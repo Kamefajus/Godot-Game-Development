@@ -1,7 +1,7 @@
 # SmartShape2D
 
-![Sample Image](./addons/rmsmartshape/documentation/imgs/sample.png)
-![Sample Gif](./addons/rmsmartshape/documentation/imgs/sample.gif)
+![Sample Image](./documentation/imgs/sample.png)
+![Sample Gif](./documentation/imgs/sample.gif)
 
 ## About
 
@@ -35,21 +35,21 @@ Read the section below on Contributing and post an issue if one doesn't already 
 ## Documentation
 > 🛈 Some documentation is outdated.
 
-- [How To Install](./addons/rmsmartshape/documentation/Install.md)
-- [Quick Start](./addons/rmsmartshape/documentation/Quickstart.md)
-- [Using SmartShape2D with Godot 4](./addons/rmsmartshape/documentation/Godot4.md)
-- [Shapes](./addons/rmsmartshape/documentation/Shapes.md)
-- [Toolbar](./addons/rmsmartshape/documentation/Toolbar.md)
-- [Resources](./addons/rmsmartshape/documentation/Resources.md)
-- [Normals](./addons/rmsmartshape/documentation/Normals.md)
-- [Controls and Hotkeys](./addons/rmsmartshape/documentation/Controls.md)
-- [FAQ](./addons/rmsmartshape/documentation/FAQ.md)
-- [Version History](./addons/rmsmartshape/documentation/VersionHistory.md)
+- [How To Install](./documentation/Install.md)
+- [Quick Start](./documentation/Quickstart.md)
+- [Using SmartShape2D with Godot 4](./documentation/Godot4.md)
+- [Shapes](./documentation/Shapes.md)
+- [Toolbar](./documentation/Toolbar.md)
+- [Resources](./documentation/Resources.md)
+- [Normals](./documentation/Normals.md)
+- [Controls and Hotkeys](./documentation/Controls.md)
+- [FAQ](./documentation/FAQ.md)
+- [Version History](./documentation/VersionHistory.md)
 
 ## Video Tutorials
 
 > 🛈 These tutorials are for Godot 3, and some things are different now.
-> Please, check [using SmartShape2D with Godot 4](./addons/rmsmartshape/documentation/Godot4.md).
+> Please, check [using SmartShape2D with Godot 4](./documentation/Godot4.md).
 
 SmartShape2D + Aseprite tutorial can be found here (Thanks Picster!):
 
