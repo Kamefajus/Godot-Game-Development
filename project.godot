@@ -21,6 +21,10 @@ config/icon="res://Art/logo.png"
 
 project/assembly_name="Godot Game Development"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
+
 [rendering]
 
 renderer/rendering_method="mobile"
