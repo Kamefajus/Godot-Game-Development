@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://di53sq4t03qp3"]
+
+[ext_resource type="Script" path="res://Scripts/Enemy.gd" id="1_g84bf"]
+[ext_resource type="Texture2D" uid="uid://dnctffsuieelc" path="res://Art/Models/enemy2.png" id="1_su5sr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhnwr"]
+size = Vector2(79, 185)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+mass = 10.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_g84bf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_su5sr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_qhnwr")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
