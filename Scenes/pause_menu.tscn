@@ -28,15 +28,15 @@ layout_mode = 2
 
 [node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Sugrįžti į žaidimą"
+text = "Resume"
 
 [node name="Restart" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Perkrauti žaidimą"
+text = "Restart"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Palikti žaidimą"
+text = "Quit"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
