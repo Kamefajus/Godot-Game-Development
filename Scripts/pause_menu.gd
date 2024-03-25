@@ -1,7 +1,7 @@
 extends Control
 
 func _process(delta):
-	if Input.is_action_just_pressed("pause"):
+	if Input.is_action_just_pressed("pause") && !$"../GameOverMenu".enabled:
 		if get_tree().paused:
 			hide()
 			get_tree().paused = false
