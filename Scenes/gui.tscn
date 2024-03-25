@@ -79,3 +79,17 @@ offset_left = 69.0
 offset_top = 2.0
 offset_right = 121.0
 offset_bottom = 25.0
+
+[node name="Progress" type="ProgressBar" parent="."]
+offset_left = 126.0
+offset_top = 194.0
+offset_right = 261.0
+offset_bottom = 221.0
+
+[node name="Label" type="Label" parent="Progress"]
+layout_mode = 0
+offset_left = -73.0
+offset_top = 1.0
+offset_right = -5.0
+offset_bottom = 24.0
+text = "Progress"
