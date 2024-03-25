@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c604wiru28tte"]
+
+[ext_resource type="AudioStream" uid="uid://b6i3vjds2pyxo" path="res://Audio/Background music/Fonine_muzika_try_7.mp3" id="1_xt5rr"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_xt5rr")
+volume_db = -28.476
+autoplay = true

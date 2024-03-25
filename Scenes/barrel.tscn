@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bppwt3niisu53"]
+
+[ext_resource type="Texture2D" uid="uid://jqnrtnghbmc2" path="res://Art/Models/barrel.png" id="1_etttj"]
+
+[sub_resource type="GDScript" id="GDScript_gn5u5"]
+resource_name = "Barrel"
+script/source = "extends RigidBody2D
+
+
+func _on_body_entered(body):
+	if (body.name == \"Player\"):
+		get_node(\".\").queue_free()
+	pass # Replace with function body.
+
+"
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = SubResource("GDScript_gn5u5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_etttj")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(54, -46, 60, -25, 60, 17, 58, 41, 52, 57, 47, 70, 21, 75, -3, 77, -29, 73, -43, 67, -59, 26, -60, -1, -56, -31, -46, -60, -40, -73, -23, -78, 8, -79, 22, -79, 42, -72)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cu1kfvx47f76o"]
+
+[ext_resource type="AudioStream" uid="uid://vvi6nb1g64vp" path="res://Audio/Background music/Rameses B - UFO  DnB  NCS - Copyright Free Music.mp3" id="1_ixw8g"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_ixw8g")
+autoplay = true

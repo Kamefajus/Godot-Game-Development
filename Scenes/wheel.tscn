@@ -1,16 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://d1c1p0scto36d"]
+[gd_scene load_steps=4 format=3 uid="uid://d1c1p0scto36d"]
 
 [ext_resource type="Texture2D" uid="uid://cj5ityql7j2go" path="res://Art/Models/car1_2.png" id="1_yy6pv"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4y3xu"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_l51hu"]
-radius = 43.0465
+radius = 51.0098
 
 [node name="wheel" type="RigidBody2D" groups=["Player", "wheel"]]
+physics_material_override = SubResource("PhysicsMaterial_4y3xu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_yy6pv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
 shape = SubResource("CircleShape2D_l51hu")

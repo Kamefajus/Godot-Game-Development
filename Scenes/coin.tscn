@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://bp3ollu21k188"]
+
+[ext_resource type="Texture2D" uid="uid://pefm8tkspd4s" path="res://Art/Images/Pickups/Coin10.png" id="1_nmy6u"]
+[ext_resource type="AudioStream" uid="uid://dtb8bqd07anyv" path="res://Audio/SFX/pickupCoin1.wav" id="2_uafou"]
+
+[sub_resource type="GDScript" id="GDScript_vplxt"]
+resource_name = "Coins"
+script/source = "extends Area2D
+
+var value = 10
+
+
+
+func _on_body_entered(body):
+	if body.is_in_group(\"Player\"):
+		get_tree().get_current_scene().add_coins(value)
+		$AnimationPlayer.play(\"pickup\")
+		$CollisionShape2D.set_deferred(\"disabled\",true)
+
+func _on_animation_player_animation_finished(anim_name):
+	queue_free()
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b2ybf"]
+radius = 81.0062
+
+[sub_resource type="Animation" id="Animation_1pas3"]
+resource_name = "pickup"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.2, -58, -60, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5)
+}
+tracks/2/type = "audio"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pickup")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("2_uafou")
+}],
+"times": PackedFloat32Array(0)
+}
+tracks/2/use_blend = true
+
+[sub_resource type="Animation" id="Animation_qb5yi"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_67est"]
+_data = {
+"RESET": SubResource("Animation_qb5yi"),
+"pickup": SubResource("Animation_1pas3")
+}
+
+[node name="Coin" type="Area2D"]
+script = SubResource("GDScript_vplxt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nmy6u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_b2ybf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_67est")
+}
+
+[node name="Pickup" type="AudioStreamPlayer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
