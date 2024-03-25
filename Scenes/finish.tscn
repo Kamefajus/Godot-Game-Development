@@ -1,13 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bnorom4n50p4o"]
+[gd_scene load_steps=4 format=3 uid="uid://bnbb5vq844pon"]
 
-[ext_resource type="Texture2D" uid="uid://ciq4gqcouqfwj" path="res://Art/Models/gas 2.jpg" id="1_r0fdu"]
+[ext_resource type="Script" path="res://Scripts/Finish.gd" id="1_fph21"]
+[ext_resource type="Texture2D" uid="uid://cbqqei2vtc5ub" path="res://Art/Gas_station.png" id="2_6kxw5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khdlj"]
+size = Vector2(690, 436)
 
 [node name="Finish" type="Area2D"]
+script = ExtResource("1_fph21")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(60970.6, -485.928)
-texture = ExtResource("1_r0fdu")
+texture = ExtResource("2_6kxw5")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(61009, -546)
-polygon = PackedVector2Array(-388.572, -186.972, -424.572, -196.972, -416.572, 314.028, 348.428, 316.028, 355.428, -200.972, -422.572, -192.972)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(348, -46)
+shape = SubResource("RectangleShape2D_khdlj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

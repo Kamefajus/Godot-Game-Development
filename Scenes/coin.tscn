@@ -24,6 +24,9 @@ func _on_animation_player_animation_finished(anim_name):
 [sub_resource type="CircleShape2D" id="CircleShape2D_b2ybf"]
 radius = 81.0062
 
+[sub_resource type="Animation" id="Animation_qb5yi"]
+length = 0.001
+
 [sub_resource type="Animation" id="Animation_1pas3"]
 resource_name = "pickup"
 tracks/0/type = "bezier"
@@ -63,9 +66,6 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0)
 }
 tracks/2/use_blend = true
-
-[sub_resource type="Animation" id="Animation_qb5yi"]
-length = 0.001
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_67est"]
 _data = {
