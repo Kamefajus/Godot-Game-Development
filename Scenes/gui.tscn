@@ -1,12 +1,81 @@
-[gd_scene load_steps=2 format=3 uid="uid://chhabxvcpb0s4"]
+[gd_scene load_steps=4 format=3 uid="uid://chhabxvcpb0s4"]
 
-[ext_resource type="Script" path="res://Scripts/gui.gd" id="1_m8lon"]
+[ext_resource type="Script" path="res://Scripts/gui.gd" id="1_k4v7v"]
+[ext_resource type="Texture2D" uid="uid://q7mgn1sm2dvu" path="res://Art/Images/Pickups/Fuel.png" id="2_oqx83"]
+[ext_resource type="Texture2D" uid="uid://pefm8tkspd4s" path="res://Art/Images/Pickups/Coin10.png" id="3_cnhpf"]
 
 [node name="GUI" type="CanvasLayer"]
+script = ExtResource("1_k4v7v")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_right = 1156.0
-offset_bottom = 107.0
-script = ExtResource("1_m8lon")
+offset_left = 858.0
+offset_top = -1.0
+offset_right = 1152.0
+offset_bottom = 106.0
+
+[node name="Health" type="ProgressBar" parent="."]
+offset_left = 129.0
+offset_top = 108.0
+offset_right = 264.0
+offset_bottom = 135.0
+
+[node name="Label" type="Label" parent="Health"]
+layout_mode = 0
+offset_left = -67.0
+offset_right = -15.0
+offset_bottom = 23.0
+text = "Health"
+
+[node name="Fuel" type="ProgressBar" parent="."]
+offset_left = 129.0
+offset_top = 26.0
+offset_right = 264.0
+offset_bottom = 53.0
+
+[node name="Label" type="Label" parent="Fuel"]
+layout_mode = 0
+offset_left = -65.0
+offset_top = 1.0
+offset_right = -13.0
+offset_bottom = 24.0
+text = "Fuel"
+
+[node name="Sprite2D" type="Sprite2D" parent="Fuel"]
+position = Vector2(-94, 12)
+scale = Vector2(0.1725, 0.1725)
+texture = ExtResource("2_oqx83")
+
+[node name="Coins" type="Label" parent="."]
+offset_left = 62.0
+offset_top = 69.0
+offset_right = 114.0
+offset_bottom = 92.0
+text = "Coins"
+
+[node name="Sprite2D" type="Sprite2D" parent="Coins"]
+position = Vector2(-26, 12)
+scale = Vector2(0.1725, 0.1725)
+texture = ExtResource("3_cnhpf")
+
+[node name="CoinsTxt" type="Label" parent="Coins"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 2.0
+offset_right = 121.0
+offset_bottom = 25.0
+
+[node name="Timer2" type="Label" parent="."]
+offset_left = 61.0
+offset_top = 152.0
+offset_right = 113.0
+offset_bottom = 175.0
+text = "Timer"
+
+[node name="TimerTxt" type="Label" parent="Timer2"]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 2.0
+offset_right = 121.0
+offset_bottom = 25.0
