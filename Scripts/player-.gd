@@ -19,15 +19,17 @@ func _process(delta):
 		$"../GameOverMenu".enable()
 		
 	current_velocity = wheels.pick_random().angular_velocity
-
+		
 	if Input.is_action_pressed("ui_right"):
-		fuel_level -= abs(current_velocity) * 0.0001
+		if !Input.is_action_pressed("ui_left"):
+			fuel_level -= abs(current_velocity) * 0.0001
 		for wheel in wheels:
 			if wheel.angular_velocity < max_speed:
 				wheel.apply_torque_impulse(speed * delta * 60)
 	
 	if Input.is_action_pressed("ui_left"):
-		fuel_level -= abs(current_velocity) * 0.0001
+		if !Input.is_action_pressed("ui_right"):
+			fuel_level -= abs(current_velocity) * 0.0001
 		for wheel in wheels:
 			if wheel.angular_velocity > -max_speed:
 				wheel.apply_torque_impulse(-speed * delta * 60)
