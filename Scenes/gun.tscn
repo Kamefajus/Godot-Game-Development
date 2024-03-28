@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://g1sk5dt552nc"]
+
+[ext_resource type="Script" path="res://Scenes/gun.gd" id="1_0tgbs"]
+[ext_resource type="Texture2D" uid="uid://dux4du1kvt0cs" path="res://Art/Models/Upgrade models/gun.png" id="1_unkdt"]
+
+[node name="Gun" type="Node2D"]
+script = ExtResource("1_0tgbs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(15, 4)
+rotation = 0.528324
+texture = ExtResource("1_unkdt")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(83, 0)
