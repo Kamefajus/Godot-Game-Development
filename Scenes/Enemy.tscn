@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://baqgef4urbx1c"]
+[gd_scene load_steps=5 format=3 uid="uid://baqgef4urbx1c"]
 
 [ext_resource type="Script" path="res://Scripts/Enemy.gd" id="1_g84bf"]
 [ext_resource type="Texture2D" uid="uid://dnctffsuieelc" path="res://Art/Models/enemy2.png" id="1_su5sr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qhnwr"]
 size = Vector2(79, 185)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bg3fl"]
+radius = 658.574
+height = 1317.15
 
 [node name="RigidBody2D" type="RigidBody2D" groups=["Enemy"]]
 collision_layer = 3
@@ -16,6 +20,7 @@ script = ExtResource("1_g84bf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_su5sr")
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 5)
@@ -31,4 +36,14 @@ offset_bottom = -120.435
 pivot_offset = Vector2(50, 132)
 show_percentage = false
 
+[node name="Detection_Area" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detection_Area"]
+rotation = 6.35385
+shape = SubResource("CapsuleShape2D_bg3fl")
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="Detection_Area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="Detection_Area" to="." method="_on_detection_area_body_exited"]

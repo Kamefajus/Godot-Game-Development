@@ -43,6 +43,10 @@ alignment = 1
 layout_mode = 2
 text = "Play"
 
+[node name="Upgrades" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Upgrades"
+
 [node name="Settings" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Settings"
@@ -52,5 +56,6 @@ layout_mode = 2
 text = "Exit"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Upgrades" to="." method="_on_upgrades_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

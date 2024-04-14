@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://jwdebifbdgfi"]
+
+[ext_resource type="Script" path="res://Scripts/Garage.gd" id="1_5hmaa"]
+[ext_resource type="Texture2D" uid="uid://chgvfipvqotos" path="res://Art/shachar-tzin-garage-background-color.jpg" id="2_7fff5"]
+[ext_resource type="Texture2D" uid="uid://xyl1b2xhbtns" path="res://Art/Images/Car/WheelMedium.png" id="6_mqv60"]
+[ext_resource type="Texture2D" uid="uid://d1tlvarurwmbe" path="res://Art/Images/Car/WheelBig.png" id="7_uxmbc"]
+[ext_resource type="Texture2D" uid="uid://q7mgn1sm2dvu" path="res://Art/Images/Pickups/Fuel.png" id="8_qbxay"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
+size = Vector2(330, 34.718)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -59.0
+offset_top = -28.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5hmaa")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 59.0
+offset_top = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7fff5")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 862.0
+offset_top = 5.16
+offset_right = -43.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+texture_normal = ExtResource("7_uxmbc")
+stretch_mode = 3
+
+[node name="TextureButton2" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+texture_normal = ExtResource("6_mqv60")
+stretch_mode = 3
+
+[node name="TextureButton3" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture_normal = ExtResource("8_qbxay")
+stretch_mode = 3
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 274.989
+offset_top = 621.354
+offset_right = 389.989
+offset_bottom = 661.354
+
+[node name="Back_Button" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+text = "Back to menu"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(331, 578.359)
+shape = SubResource("RectangleShape2D_uehly")
+
+[connection signal="pressed" from="VBoxContainer2/Back_Button" to="." method="_on_button_pressed"]

@@ -7,6 +7,7 @@
 
 [node name="Player" type="RigidBody2D" groups=["Player"]]
 position = Vector2(-1, -12)
+collision_layer = 3
 mass = 0.08
 script = ExtResource("1_8ntwr")
 

@@ -1,7 +1,15 @@
 extends RigidBody2D
 
+@export var speed = 50
+var player_chase = false
+var player = null
 var dmg = 25
 var health = 100
+
+func _physics_process(delta):
+	if player_chase:
+		position += (player.position - position) / speed
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -24,3 +32,13 @@ func _on_body_entered(body):
 
 func on_hit():
 	health -= 25
+
+
+func _on_detection_area_body_entered(body):
+	player = body
+	player_chase = true
+
+
+func _on_detection_area_body_exited(body):
+	player = null
+	player_chase = false

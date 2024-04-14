@@ -12,4 +12,5 @@ rotation = 0.528324
 texture = ExtResource("1_unkdt")
 
 [node name="Marker2D" type="Marker2D" parent="."]
+light_mask = 3
 position = Vector2(83, 0)
