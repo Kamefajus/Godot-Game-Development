@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/level_completed_menu.gd" id="1_27t66"]
 
 [node name="LevelCompletedMenu" type="Control"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
