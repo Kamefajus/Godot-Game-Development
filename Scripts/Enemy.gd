@@ -26,13 +26,12 @@ func _process(delta):
 	
 func _on_body_entered(body):
 	if (body.name == "Player"):
-		get_tree().get_nodes_in_group("Player")[0].health -= dmg;
+		get_tree().get_nodes_in_group("Player")[0].health -= dmg - (dmg / 100.0 * GlobalVariables.armor)
 		get_node(".").queue_free()
 	pass # Replace with function body.
 
 func on_hit():
-	health -= 25
-
+	health -= dmg + ((100 - dmg) / 100.0 * GlobalVariables.gun)
 
 func _on_detection_area_body_entered(body):
 	player = body
