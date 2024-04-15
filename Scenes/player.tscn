@@ -16,7 +16,7 @@ z_index = 1
 position = Vector2(96, -105)
 
 [node name="WheelHolder" type="PinJoint2D" parent="."]
-position = Vector2(-99, 38)
+position = Vector2(-96, -23)
 node_a = NodePath("..")
 node_b = NodePath("wheel")
 softness = 2.52
@@ -25,7 +25,7 @@ softness = 2.52
 scale = Vector2(0.775, 0.775)
 
 [node name="WheelHolder2" type="PinJoint2D" parent="."]
-position = Vector2(93, 38)
+position = Vector2(95, -23)
 node_a = NodePath("..")
 node_b = NodePath("wheel")
 softness = 2.52
