@@ -17,6 +17,10 @@ boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/show_image=false
 config/icon="res://Art/logo.png"
 
+[autoload]
+
+GlobalVariables="*res://GlobalVariables.gd"
+
 [display]
 
 window/size/mode=3
@@ -28,7 +32,7 @@ project/assembly_name="Godot Game Development"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 

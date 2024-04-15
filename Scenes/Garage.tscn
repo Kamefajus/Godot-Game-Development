@@ -1,10 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://jwdebifbdgfi"]
+[gd_scene load_steps=16 format=3 uid="uid://jwdebifbdgfi"]
 
 [ext_resource type="Script" path="res://Scripts/Garage.gd" id="1_5hmaa"]
 [ext_resource type="Texture2D" uid="uid://chgvfipvqotos" path="res://Art/shachar-tzin-garage-background-color.jpg" id="2_7fff5"]
+[ext_resource type="Texture2D" uid="uid://ci5mi0xg0rrpt" path="res://Art/Models/Upgrade models/armor.png" id="6_3lqao"]
 [ext_resource type="Texture2D" uid="uid://xyl1b2xhbtns" path="res://Art/Images/Car/WheelMedium.png" id="6_mqv60"]
+[ext_resource type="Texture2D" uid="uid://dvp0ndyita0sj" path="res://Art/Images/Other/Plus.png" id="7_fl0yd"]
+[ext_resource type="Texture2D" uid="uid://bb48qkk4xfhuq" path="res://Art/Models/Upgrade models/booster.png" id="7_ub38s"]
 [ext_resource type="Texture2D" uid="uid://d1tlvarurwmbe" path="res://Art/Images/Car/WheelBig.png" id="7_uxmbc"]
+[ext_resource type="Texture2D" uid="uid://da62wxguncblb" path="res://Art/Models/Upgrade models/engine.png" id="8_0fbsn"]
+[ext_resource type="Texture2D" uid="uid://ckjatuk5rtiin" path="res://Art/Images/Other/PlusLight.png" id="8_6hhpe"]
 [ext_resource type="Texture2D" uid="uid://q7mgn1sm2dvu" path="res://Art/Images/Pickups/Fuel.png" id="8_qbxay"]
+[ext_resource type="Texture2D" uid="uid://dvgpumoly5e56" path="res://Art/Models/Upgrade models/fuel.png" id="9_acimn"]
+[ext_resource type="Texture2D" uid="uid://dux4du1kvt0cs" path="res://Art/Models/Upgrade models/gun.png" id="10_pomkl"]
+[ext_resource type="Texture2D" uid="uid://bkhvrv0ayydac" path="res://Art/Models/Upgrade models/weight.png" id="11_mhw4i"]
+[ext_resource type="Texture2D" uid="uid://pefm8tkspd4s" path="res://Art/Images/Pickups/Coin10.png" id="12_mjltx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
 size = Vector2(330, 34.718)
@@ -74,10 +83,186 @@ offset_bottom = 661.354
 
 [node name="Back_Button" type="Button" parent="VBoxContainer2"]
 layout_mode = 2
-text = "Back to menu"
+text = "Back to Main Menu"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(331, 578.359)
 shape = SubResource("RectangleShape2D_uehly")
 
+[node name="Armor" type="Sprite2D" parent="."]
+position = Vector2(200, 200)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("6_3lqao")
+
+[node name="ProgressBar" type="ProgressBar" parent="Armor"]
+offset_left = -1.33333
+offset_top = 50.0
+offset_right = 2.66667
+offset_bottom = 77.0
+
+[node name="UpgradeArmorButton" type="TextureButton" parent="Armor"]
+offset_left = 22.6667
+offset_top = 53.3335
+offset_right = 252.667
+offset_bottom = 272.333
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_fl0yd")
+texture_hover = ExtResource("8_6hhpe")
+
+[node name="Label" type="Label" parent="Armor"]
+offset_left = -25.0
+offset_top = -75.0
+offset_right = 25.0
+offset_bottom = -25.0
+text = "Armor"
+
+[node name="Booster" type="Sprite2D" parent="."]
+position = Vector2(200, 350)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("7_ub38s")
+
+[node name="ProgressBar" type="ProgressBar" parent="Booster"]
+offset_top = 50.0
+offset_right = 4.0
+offset_bottom = 77.0
+step = 1.0
+
+[node name="UpgradeBoosterButton" type="TextureButton" parent="Booster"]
+offset_left = 22.6667
+offset_top = 53.3335
+offset_right = 252.667
+offset_bottom = 272.333
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_fl0yd")
+texture_hover = ExtResource("8_6hhpe")
+
+[node name="Label" type="Label" parent="Booster"]
+offset_left = -25.0
+offset_top = -75.0
+offset_right = 25.0
+offset_bottom = -25.0
+text = "Booster"
+
+[node name="Engine" type="Sprite2D" parent="."]
+position = Vector2(200, 500)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("8_0fbsn")
+
+[node name="ProgressBar" type="ProgressBar" parent="Engine"]
+offset_top = 50.0
+offset_right = 4.0
+offset_bottom = 77.0
+
+[node name="UpgradeEngineButton" type="TextureButton" parent="Engine"]
+offset_left = 22.6667
+offset_top = 53.3335
+offset_right = 252.667
+offset_bottom = 272.333
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_fl0yd")
+texture_hover = ExtResource("8_6hhpe")
+
+[node name="Label" type="Label" parent="Engine"]
+offset_left = -25.0
+offset_top = -75.0
+offset_right = 25.0
+offset_bottom = -25.0
+text = "Engine"
+
+[node name="Fuel" type="Sprite2D" parent="."]
+position = Vector2(550, 200)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("9_acimn")
+
+[node name="ProgressBar" type="ProgressBar" parent="Fuel"]
+offset_top = 50.0
+offset_right = 4.0
+offset_bottom = 77.0
+
+[node name="UpgradeFuelButton" type="TextureButton" parent="Fuel"]
+offset_left = 22.6667
+offset_top = 53.3335
+offset_right = 252.667
+offset_bottom = 272.333
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_fl0yd")
+texture_hover = ExtResource("8_6hhpe")
+
+[node name="Label" type="Label" parent="Fuel"]
+offset_left = -25.0
+offset_top = -75.0
+offset_right = 25.0
+offset_bottom = -23.0
+text = "Fuel"
+
+[node name="Gun" type="Sprite2D" parent="."]
+position = Vector2(550, 350)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("10_pomkl")
+
+[node name="ProgressBar" type="ProgressBar" parent="Gun"]
+offset_top = 50.0
+offset_right = 4.0
+offset_bottom = 77.0
+
+[node name="UpgradeGunButton" type="TextureButton" parent="Gun"]
+offset_left = 22.6667
+offset_top = 53.3335
+offset_right = 252.667
+offset_bottom = 272.333
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_fl0yd")
+texture_hover = ExtResource("8_6hhpe")
+
+[node name="Label" type="Label" parent="Gun"]
+offset_left = -25.0
+offset_top = -75.0
+offset_right = 25.0
+offset_bottom = -25.0
+text = "Gun"
+
+[node name="Weight" type="Sprite2D" parent="."]
+position = Vector2(550, 500)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("11_mhw4i")
+
+[node name="ProgressBar" type="ProgressBar" parent="Weight"]
+offset_top = 50.0
+offset_right = 4.0
+offset_bottom = 77.0
+
+[node name="UpgradeWeightButton" type="TextureButton" parent="Weight"]
+offset_left = 22.6667
+offset_top = 53.3335
+offset_right = 252.667
+offset_bottom = 272.333
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("7_fl0yd")
+texture_hover = ExtResource("8_6hhpe")
+
+[node name="Label" type="Label" parent="Weight"]
+offset_left = -25.0
+offset_top = -75.0
+offset_right = 25.0
+offset_bottom = -25.0
+text = "Weight"
+
+[node name="Coins" type="Label" parent="."]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 36.0
+offset_right = 126.0
+offset_bottom = 59.0
+
+[node name="Coin10" type="Sprite2D" parent="Coins"]
+position = Vector2(-18, 12)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("12_mjltx")
+
 [connection signal="pressed" from="VBoxContainer2/Back_Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Armor/UpgradeArmorButton" to="." method="_on_upgrade_armor_button_pressed"]
+[connection signal="pressed" from="Booster/UpgradeBoosterButton" to="." method="_on_upgrade_booster_button_pressed"]
+[connection signal="pressed" from="Engine/UpgradeEngineButton" to="." method="_on_upgrade_engine_button_pressed"]
+[connection signal="pressed" from="Fuel/UpgradeFuelButton" to="." method="_on_upgrade_fuel_button_pressed"]
+[connection signal="pressed" from="Gun/UpgradeGunButton" to="." method="_on_upgrade_gun_button_pressed"]
+[connection signal="pressed" from="Weight/UpgradeWeightButton" to="." method="_on_upgrade_weight_button_pressed"]
