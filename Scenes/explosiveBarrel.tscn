@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://4fsa1syn82u7"]
+[gd_scene load_steps=4 format=3 uid="uid://bopixpfgf2qj0"]
 
-[ext_resource type="Texture2D" uid="uid://bryvxk0wuf1ra" path="res://Art/Models/explobarrel.png" id="1_a4vh2"]
+[ext_resource type="Texture2D" path="res://Art/Models/explobarrel.png" id="1_a4vh2"]
 [ext_resource type="Script" path="res://EXPLOSIVE.gd" id="2_3jxol"]
-[ext_resource type="PackedScene" uid="uid://b75qyb0u4of3u" path="res://Scenes/explo_particles_2d.tscn" id="3_2rwrv"]
+[ext_resource type="PackedScene" path="res://Scenes/explo_particles_2d.tscn" id="3_2rwrv"]
 
 [node name="explosive" type="RigidBody2D"]
 
