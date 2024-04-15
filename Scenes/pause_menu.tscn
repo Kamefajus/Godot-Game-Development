@@ -43,7 +43,18 @@ text = "Back to Main Menu"
 layout_mode = 2
 text = "Quit"
 
+[node name="Main Menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Main Menu"
+
+[node name="Sound" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+text = "Mute Sound"
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/BackToMainMenu" to="." method="_on_back_to_main_menu_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Sound" to="." method="_on_sound_pressed"]
