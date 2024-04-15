@@ -2,7 +2,7 @@ extends Control
 var master_bus= AudioServer.get_bus_index("Master")
 
 func _process(delta):
-	if Input.is_action_just_pressed("pause") && !$"../GameOverMenu".enabled:
+	if Input.is_action_just_pressed("pause") && !$"../GameOverMenu".enabled && !$"../LevelCompletedMenu".enabled:
 		if get_tree().paused:
 			hide()
 			get_tree().paused = false
