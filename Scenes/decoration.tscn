@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdwdpqwst34s7"]
+
+[ext_resource type="PackedScene" uid="uid://d1c1p0scto36d" path="res://Scenes/wheel.tscn" id="1_5vsp0"]
+[ext_resource type="Texture2D" uid="uid://cnv7aliiogdn7" path="res://Art/Images/Car/RedCar.png" id="2_y8sqe"]
+
+[node name="Decoration" type="RigidBody2D" groups=["Decoration"]]
+
+[node name="Holder" type="PinJoint2D" parent="."]
+node_a = NodePath("..")
+node_b = NodePath("wheel")
+
+[node name="wheel" parent="Holder" instance=ExtResource("1_5vsp0")]
+position = Vector2(-152, 86)
+
+[node name="Holder2" type="PinJoint2D" parent="."]
+position = Vector2(107.002, 90.756)
+node_a = NodePath("..")
+node_b = NodePath("wheel")
+
+[node name="wheel" parent="Holder2" instance=ExtResource("1_5vsp0")]
+position = Vector2(1.99762, -6.75597)
+
+[node name="Vroom" type="Sprite2D" parent="."]
+texture = ExtResource("2_y8sqe")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-37, -26, -89, -27, -132, -61, -203, -57, -221, -42, -220, 75, -197, 93, -177, 93, -146, 93, -104, 91, 62, 92, 114, 92, 141, 92, 205, 92, 212, 90, 209, -8, 141, -34, 101, -45, 54, -52, 16, -58, -7, -33, -37, -24, -92, -27)

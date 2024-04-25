@@ -1,0 +1,81 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk3cfenni74jh"]
+
+[ext_resource type="Script" path="res://Scenes/Lvl_Button.gd" id="1_4q4e7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4q4e7")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -920.0
+offset_bottom = -516.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 1"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 432.0
+offset_right = -488.0
+offset_bottom = -516.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 2"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 274.0
+offset_right = -921.0
+offset_bottom = -242.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 3"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 435.0
+offset_top = 267.0
+offset_right = -485.0
+offset_bottom = -249.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 4"
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Button2" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button2" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="mouse_entered" from="Button3" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button3" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="mouse_entered" from="Button4" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button4" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_pressed"]

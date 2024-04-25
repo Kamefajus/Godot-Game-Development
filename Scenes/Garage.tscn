@@ -1,22 +1,134 @@
-[gd_scene load_steps=16 format=3 uid="uid://jwdebifbdgfi"]
+[gd_scene load_steps=33 format=3 uid="uid://jwdebifbdgfi"]
 
 [ext_resource type="Script" path="res://Scripts/Garage.gd" id="1_5hmaa"]
 [ext_resource type="Texture2D" uid="uid://chgvfipvqotos" path="res://Art/shachar-tzin-garage-background-color.jpg" id="2_7fff5"]
 [ext_resource type="Texture2D" uid="uid://ci5mi0xg0rrpt" path="res://Art/Models/Upgrade models/armor.png" id="6_3lqao"]
-[ext_resource type="Texture2D" uid="uid://xyl1b2xhbtns" path="res://Art/Images/Car/WheelMedium.png" id="6_mqv60"]
 [ext_resource type="Texture2D" uid="uid://dvp0ndyita0sj" path="res://Art/Images/Other/Plus.png" id="7_fl0yd"]
 [ext_resource type="Texture2D" uid="uid://bb48qkk4xfhuq" path="res://Art/Models/Upgrade models/booster.png" id="7_ub38s"]
-[ext_resource type="Texture2D" uid="uid://d1tlvarurwmbe" path="res://Art/Images/Car/WheelBig.png" id="7_uxmbc"]
 [ext_resource type="Texture2D" uid="uid://da62wxguncblb" path="res://Art/Models/Upgrade models/engine.png" id="8_0fbsn"]
 [ext_resource type="Texture2D" uid="uid://ckjatuk5rtiin" path="res://Art/Images/Other/PlusLight.png" id="8_6hhpe"]
-[ext_resource type="Texture2D" uid="uid://q7mgn1sm2dvu" path="res://Art/Images/Pickups/Fuel.png" id="8_qbxay"]
 [ext_resource type="Texture2D" uid="uid://dvgpumoly5e56" path="res://Art/Models/Upgrade models/fuel.png" id="9_acimn"]
 [ext_resource type="Texture2D" uid="uid://dux4du1kvt0cs" path="res://Art/Models/Upgrade models/gun.png" id="10_pomkl"]
 [ext_resource type="Texture2D" uid="uid://bkhvrv0ayydac" path="res://Art/Models/Upgrade models/weight.png" id="11_mhw4i"]
+[ext_resource type="PackedScene" uid="uid://cdwdpqwst34s7" path="res://Scenes/decoration.tscn" id="12_dpra8"]
 [ext_resource type="Texture2D" uid="uid://pefm8tkspd4s" path="res://Art/Images/Pickups/Coin10.png" id="12_mjltx"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/shape_closed.gd" id="13_eayyc"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/vertex_properties.gd" id="14_ksnop"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point.gd" id="15_omjlr"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point_array.gd" id="16_qfx7u"]
+[ext_resource type="Script" path="res://addons/rmsmartshape/materials/shape_material.gd" id="17_2yln7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
-size = Vector2(330, 34.718)
+size = Vector2(523.147, 56.6124)
+
+[sub_resource type="Resource" id="Resource_q77ms"]
+script = ExtResource("14_ksnop")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_yqlia"]
+script = ExtResource("15_omjlr")
+position = Vector2(127.232, 576.726)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_q77ms")
+
+[sub_resource type="Resource" id="Resource_mpsge"]
+script = ExtResource("14_ksnop")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_fl6f7"]
+script = ExtResource("15_omjlr")
+position = Vector2(538.363, 578.06)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_mpsge")
+
+[sub_resource type="Resource" id="Resource_sfbws"]
+script = ExtResource("14_ksnop")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_qqwmx"]
+script = ExtResource("15_omjlr")
+position = Vector2(526.349, 610.097)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_sfbws")
+
+[sub_resource type="Resource" id="Resource_a635g"]
+script = ExtResource("14_ksnop")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_8d06n"]
+script = ExtResource("15_omjlr")
+position = Vector2(490.309, 607.427)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_a635g")
+
+[sub_resource type="Resource" id="Resource_17ccx"]
+script = ExtResource("14_ksnop")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_rpoym"]
+script = ExtResource("15_omjlr")
+position = Vector2(165.942, 603.422)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_17ccx")
+
+[sub_resource type="Resource" id="Resource_b2jxn"]
+script = ExtResource("14_ksnop")
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id="Resource_isue0"]
+script = ExtResource("15_omjlr")
+position = Vector2(127.232, 576.726)
+point_in = Vector2(0, 0)
+point_out = Vector2(0, 0)
+properties = SubResource("Resource_b2jxn")
+
+[sub_resource type="Resource" id="Resource_v4jk1"]
+script = ExtResource("16_qfx7u")
+_points = {
+0: SubResource("Resource_yqlia"),
+1: SubResource("Resource_fl6f7"),
+2: SubResource("Resource_qqwmx"),
+7: SubResource("Resource_8d06n"),
+8: SubResource("Resource_rpoym"),
+14: SubResource("Resource_isue0")
+}
+_point_order = Array[int]([0, 1, 2, 7, 8, 14])
+_constraints = {
+Array[int]([0, 14]): 15
+}
+_next_key = 15
+_material_overrides = {}
+
+[sub_resource type="Resource" id="Resource_vaei1"]
+script = ExtResource("17_2yln7")
+_edge_meta_materials = Array[Resource("res://addons/rmsmartshape/materials/edge_material_metadata.gd")]([])
+fill_textures = Array[Texture2D]([])
+fill_texture_z_index = -10
+fill_texture_show_behind_parent = false
+fill_texture_scale = 1.0
+fill_texture_absolute_position = false
+fill_texture_absolute_rotation = false
+fill_texture_offset = Vector2(0, 0)
+fill_texture_angle_offset = 0.0
+fill_mesh_offset = 0.0
+render_offset = 0.0
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -43,37 +155,6 @@ grow_vertical = 2
 texture = ExtResource("2_7fff5")
 expand_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 862.0
-offset_top = 5.16
-offset_right = -43.0
-offset_bottom = 3.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-texture_normal = ExtResource("7_uxmbc")
-stretch_mode = 3
-
-[node name="TextureButton2" type="TextureButton" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-texture_normal = ExtResource("6_mqv60")
-stretch_mode = 3
-
-[node name="TextureButton3" type="TextureButton" parent="VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 8
-texture_normal = ExtResource("8_qbxay")
-stretch_mode = 3
-
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 274.989
@@ -85,12 +166,8 @@ offset_bottom = 661.354
 layout_mode = 2
 text = "Back to Main Menu"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(331, 578.359)
-shape = SubResource("RectangleShape2D_uehly")
-
 [node name="Armor" type="Sprite2D" parent="."]
-position = Vector2(200, 200)
+position = Vector2(885.618, 188.846)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("6_3lqao")
 
@@ -99,6 +176,7 @@ offset_left = -1.33333
 offset_top = 50.0
 offset_right = 2.66667
 offset_bottom = 77.0
+metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeArmorButton" type="TextureButton" parent="Armor"]
 offset_left = 22.6667
@@ -117,7 +195,7 @@ offset_bottom = -25.0
 text = "Armor"
 
 [node name="Booster" type="Sprite2D" parent="."]
-position = Vector2(200, 350)
+position = Vector2(882.916, 346.705)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("7_ub38s")
 
@@ -126,6 +204,7 @@ offset_top = 50.0
 offset_right = 4.0
 offset_bottom = 77.0
 step = 1.0
+metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeBoosterButton" type="TextureButton" parent="Booster"]
 offset_left = 22.6667
@@ -144,7 +223,7 @@ offset_bottom = -25.0
 text = "Booster"
 
 [node name="Engine" type="Sprite2D" parent="."]
-position = Vector2(200, 500)
+position = Vector2(889.987, 510.754)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("8_0fbsn")
 
@@ -152,6 +231,7 @@ texture = ExtResource("8_0fbsn")
 offset_top = 50.0
 offset_right = 4.0
 offset_bottom = 77.0
+metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeEngineButton" type="TextureButton" parent="Engine"]
 offset_left = 22.6667
@@ -170,7 +250,7 @@ offset_bottom = -25.0
 text = "Engine"
 
 [node name="Fuel" type="Sprite2D" parent="."]
-position = Vector2(550, 200)
+position = Vector2(1119.09, 185.485)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("9_acimn")
 
@@ -178,6 +258,7 @@ texture = ExtResource("9_acimn")
 offset_top = 50.0
 offset_right = 4.0
 offset_bottom = 77.0
+metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeFuelButton" type="TextureButton" parent="Fuel"]
 offset_left = 22.6667
@@ -196,7 +277,7 @@ offset_bottom = -23.0
 text = "Fuel"
 
 [node name="Gun" type="Sprite2D" parent="."]
-position = Vector2(550, 350)
+position = Vector2(1126.16, 355.191)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("10_pomkl")
 
@@ -204,6 +285,7 @@ texture = ExtResource("10_pomkl")
 offset_top = 50.0
 offset_right = 4.0
 offset_bottom = 77.0
+metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeGunButton" type="TextureButton" parent="Gun"]
 offset_left = 22.6667
@@ -222,7 +304,7 @@ offset_bottom = -25.0
 text = "Gun"
 
 [node name="Weight" type="Sprite2D" parent="."]
-position = Vector2(550, 500)
+position = Vector2(1126.16, 514.997)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("11_mhw4i")
 
@@ -230,6 +312,7 @@ texture = ExtResource("11_mhw4i")
 offset_top = 50.0
 offset_right = 4.0
 offset_bottom = 77.0
+metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeWeightButton" type="TextureButton" parent="Weight"]
 offset_left = 22.6667
@@ -258,6 +341,24 @@ offset_bottom = 59.0
 position = Vector2(-18, 12)
 scale = Vector2(0.17, 0.17)
 texture = ExtResource("12_mjltx")
+
+[node name="Decoration" parent="." instance=ExtResource("12_dpra8")]
+position = Vector2(345, 454)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(328, 614)
+shape = SubResource("RectangleShape2D_uehly")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="SS2D_Shape_Closed" type="Node2D" parent="StaticBody2D"]
+script = ExtResource("13_eayyc")
+_points = SubResource("Resource_v4jk1")
+shape_material = SubResource("Resource_vaei1")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(180.626, 594.079)
+polygon = PackedVector2Array(49.3743, -34.0786, 77.3743, -37.0786, 238.374, -38.0786, 243.374, -20.0786, 281.374, -11.0786, 309.374, -30.0786, 376.374, -8.07855, 365.374, 27.9214, 225.374, 31.9214, 48.3743, 36.9214, -69.6257, 35.9214, -103.626, -1.07855, -71.6257, -19.0786, -34.6257, -49.0786, -20.6257, -28.0786, 4.37433, -11.0786)
 
 [connection signal="pressed" from="VBoxContainer2/Back_Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Armor/UpgradeArmorButton" to="." method="_on_upgrade_armor_button_pressed"]
