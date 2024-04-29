@@ -7,6 +7,17 @@ func enable():
 	show();
 	enabled = true
 	get_tree().paused = true
+	
+func _on_next_level_pressed():
+	GlobalVariables.coins += $"../Player".coins
+	GlobalVariables.save()
+	get_tree().paused = false
+	if (GlobalVariables.current_level < 4):
+		GlobalVariables.current_level += 1
+		get_tree().change_scene_to_file("res://Scenes/level_" + str(GlobalVariables.current_level) + ".tscn")
+	else:
+		GlobalVariables.current_level = 1
+		get_tree().change_scene_to_file("res://Scenes/level_1.tscn")
 
 func _on_restart_pressed():
 	GlobalVariables.coins += $"../Player".coins
