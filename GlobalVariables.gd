@@ -9,6 +9,9 @@ var engine = 0
 var fuel = 0
 var gun = 0
 var weight = 0
+var levels_unlocked = 1
+
+var current_level = 0 # Šito į failą išsaugoti nereikia.
 
 func save():
 	var file = FileAccess.open(save_path, FileAccess.WRITE)
@@ -22,6 +25,7 @@ func save():
 	file.store_var(fuel)
 	file.store_var(gun)
 	file.store_var(weight)
+	file.store_var(levels_unlocked)
 	file.close()
 
 func load():
@@ -40,6 +44,7 @@ func load():
 		fuel = file.get_var()
 		gun = file.get_var()
 		weight = file.get_var()
+		levels_unlocked = file.get_var()
 
 func reset():
 	InputMap.load_from_project_settings()
@@ -50,5 +55,6 @@ func reset():
 	fuel = 0
 	gun = 0
 	weight = 0
+	levels_unlocked = 1
 	save()
 
