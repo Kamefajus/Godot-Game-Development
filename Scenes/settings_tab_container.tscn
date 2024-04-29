@@ -61,6 +61,7 @@ bus_name = "Music"
 
 [node name="Audio_Slider3" parent="TabContainer/Sound/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_w0ete")]
 layout_mode = 2
+bus_name = "Sound effect"
 
 [node name="Graphics" type="TabBar" parent="TabContainer"]
 visible = false

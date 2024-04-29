@@ -1,8 +1,67 @@
-[gd_scene load_steps=4 format=3 uid="uid://bopixpfgf2qj0"]
+[gd_scene load_steps=14 format=3 uid="uid://bopixpfgf2qj0"]
 
-[ext_resource type="Texture2D" path="res://Art/Models/explobarrel.png" id="1_a4vh2"]
+[ext_resource type="Texture2D" uid="uid://bryvxk0wuf1ra" path="res://Art/Models/explobarrel.png" id="1_a4vh2"]
 [ext_resource type="Script" path="res://EXPLOSIVE.gd" id="2_3jxol"]
-[ext_resource type="PackedScene" path="res://Scenes/explo_particles_2d.tscn" id="3_2rwrv"]
+[ext_resource type="PackedScene" uid="uid://b75qyb0u4of3u" path="res://Scenes/explo_particles_2d.tscn" id="3_2rwrv"]
+[ext_resource type="Texture2D" uid="uid://b0muo4cwy2atw" path="res://Art/Models/Boooooom (52x56).png" id="4_244qa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23nlp"]
+atlas = ExtResource("4_244qa")
+region = Rect2(208, 0, 52, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bap3"]
+atlas = ExtResource("4_244qa")
+region = Rect2(0, 0, 52, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgs0k"]
+atlas = ExtResource("4_244qa")
+region = Rect2(52, 0, 52, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxr7d"]
+atlas = ExtResource("4_244qa")
+region = Rect2(104, 0, 52, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w87bu"]
+atlas = ExtResource("4_244qa")
+region = Rect2(156, 0, 52, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4mv8"]
+atlas = ExtResource("4_244qa")
+region = Rect2(260, 0, 52, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wwde3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23nlp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bap3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgs0k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxr7d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w87bu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4mv8")
+}],
+"loop": true,
+"name": &"boom",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_2y3ek"]
+resource_name = "explosivesss"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_748ko"]
+_data = {
+"explosivesss": SubResource("Animation_2y3ek")
+}
 
 [node name="explosive" type="RigidBody2D"]
 
@@ -13,5 +72,17 @@ texture = ExtResource("1_a4vh2")
 script = ExtResource("2_3jxol")
 deathParticle = ExtResource("3_2rwrv")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="EXPLOSIVE"]
+position = Vector2(2, -36)
+scale = Vector2(11.905, 11.905)
+sprite_frames = SubResource("SpriteFrames_wwde3")
+animation = &"boom"
+frame_progress = 0.534717
+
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-40, -73, -26, -79, 7, -81, 45, -72, 57, -45, 62, 0, 60, 24, 56, 50, 51, 69, 46, 73, 24, 76, -18, 76, -40, 70, -53, 47, -61, 8, -59, -13, -54, -40, -45, -67)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_748ko")
+}
