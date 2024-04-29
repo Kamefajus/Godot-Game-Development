@@ -12,6 +12,9 @@ var weight = 0
 
 func save():
 	var file = FileAccess.open(save_path, FileAccess.WRITE)
+	file.store_var(InputMap.action_get_events("move_right")[0], true)
+	file.store_var(InputMap.action_get_events("move_left")[0], true)
+	file.store_var(InputMap.action_get_events("shoot")[0], true)
 	file.store_var(coins)
 	file.store_var(armor)
 	file.store_var(booster)
@@ -24,15 +27,22 @@ func save():
 func load():
 	if FileAccess.file_exists(save_path):
 		var file = FileAccess.open(save_path, FileAccess.READ)
-		coins = file.get_var(coins)
-		armor = file.get_var(armor)
-		booster = file.get_var(booster)
-		engine = file.get_var(engine)
-		fuel = file.get_var(fuel)
-		gun = file.get_var(gun)
-		weight = file.get_var(weight)
+		InputMap.action_erase_events("move_right")
+		InputMap.action_add_event("move_right", file.get_var(true))
+		InputMap.action_erase_events("move_left")
+		InputMap.action_add_event("move_left", file.get_var(true))
+		InputMap.action_erase_events("shoot")
+		InputMap.action_add_event("shoot", file.get_var(true))
+		coins = file.get_var()
+		armor = file.get_var()
+		booster = file.get_var()
+		engine = file.get_var()
+		fuel = file.get_var()
+		gun = file.get_var()
+		weight = file.get_var()
 
 func reset():
+	InputMap.load_from_project_settings()
 	coins = 0	
 	armor = 0
 	booster = 0

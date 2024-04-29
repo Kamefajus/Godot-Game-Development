@@ -16,4 +16,5 @@ func on_exit_pressed() -> void:
 	set_process(false)
 	
 func _on_back_pressed():
+	GlobalVariables.save()
 	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
