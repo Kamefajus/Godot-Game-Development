@@ -21,7 +21,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
 size = Vector2(523.147, 56.6124)
 
-[sub_resource type="Resource" id="Resource_87g13"]
+[sub_resource type="Resource" id="Resource_hinwm"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -32,9 +32,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_87g13")
+properties = SubResource("Resource_hinwm")
 
-[sub_resource type="Resource" id="Resource_hubnx"]
+[sub_resource type="Resource" id="Resource_vpn6p"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -45,9 +45,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(538.363, 578.06)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_hubnx")
+properties = SubResource("Resource_vpn6p")
 
-[sub_resource type="Resource" id="Resource_1n5to"]
+[sub_resource type="Resource" id="Resource_gmvms"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -58,9 +58,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(526.349, 610.097)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_1n5to")
+properties = SubResource("Resource_gmvms")
 
-[sub_resource type="Resource" id="Resource_v8wm1"]
+[sub_resource type="Resource" id="Resource_p8fkk"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -71,9 +71,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(490.309, 607.427)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_v8wm1")
+properties = SubResource("Resource_p8fkk")
 
-[sub_resource type="Resource" id="Resource_cptd3"]
+[sub_resource type="Resource" id="Resource_kbfof"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -84,9 +84,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(165.942, 603.422)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_cptd3")
+properties = SubResource("Resource_kbfof")
 
-[sub_resource type="Resource" id="Resource_ggsko"]
+[sub_resource type="Resource" id="Resource_niepr"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -97,7 +97,7 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_ggsko")
+properties = SubResource("Resource_niepr")
 
 [sub_resource type="Resource" id="Resource_v4jk1"]
 script = ExtResource("16_qfx7u")
@@ -360,6 +360,17 @@ shape_material = SubResource("Resource_vaei1")
 position = Vector2(180.626, 594.079)
 polygon = PackedVector2Array(49.3743, -34.0786, 77.3743, -37.0786, 238.374, -38.0786, 243.374, -20.0786, 281.374, -11.0786, 309.374, -30.0786, 376.374, -8.07855, 365.374, 27.9214, 225.374, 31.9214, 48.3743, 36.9214, -69.6257, 35.9214, -103.626, -1.07855, -71.6257, -19.0786, -34.6257, -49.0786, -20.6257, -28.0786, 4.37433, -11.0786)
 
+[node name="NotEnoughCoins" type="Window" parent="."]
+position = Vector2i(425, 275)
+size = Vector2i(350, 100)
+visible = false
+
+[node name="Label" type="Label" parent="NotEnoughCoins"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "You do not have the necessary amount of
+coins to buy this upgrade! (? is required)"
+
 [connection signal="pressed" from="VBoxContainer2/Back_Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Armor/UpgradeArmorButton" to="." method="_on_upgrade_armor_button_pressed"]
 [connection signal="pressed" from="Booster/UpgradeBoosterButton" to="." method="_on_upgrade_booster_button_pressed"]
@@ -367,3 +378,4 @@ polygon = PackedVector2Array(49.3743, -34.0786, 77.3743, -37.0786, 238.374, -38.
 [connection signal="pressed" from="Fuel/UpgradeFuelButton" to="." method="_on_upgrade_fuel_button_pressed"]
 [connection signal="pressed" from="Gun/UpgradeGunButton" to="." method="_on_upgrade_gun_button_pressed"]
 [connection signal="pressed" from="Weight/UpgradeWeightButton" to="." method="_on_upgrade_weight_button_pressed"]
+[connection signal="close_requested" from="NotEnoughCoins" to="." method="_on_not_enough_coins_close_requested"]
