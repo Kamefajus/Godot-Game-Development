@@ -17,7 +17,6 @@ func _ready():
 	_create_action_list()
 	
 func _create_action_list():
-
 		for item in action_list.get_children():
 			item.queue_free()
 			
@@ -66,4 +65,5 @@ func _update_action_list(button, event):
 	button.find_child("LabelInput").text = event.as_text().trim_suffix(" (Physical)")
 
 func _on_reset_button_pressed():
+	InputMap.load_from_project_settings()
 	_create_action_list()
