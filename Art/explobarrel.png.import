@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t2ef13gklx2e"
-path="res://.godot/imported/Desert Night_bg.png-8c88d15a6315b34351854ed81575fe2a.ctex"
+uid="uid://bs5pgnm3pvv88"
+path="res://.godot/imported/explobarrel.png-cc883fa707dab5377dce3c47c1e70e77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Desert Night_bg.png"
-dest_files=["res://.godot/imported/Desert Night_bg.png-8c88d15a6315b34351854ed81575fe2a.ctex"]
+source_file="res://Art/explobarrel.png"
+dest_files=["res://.godot/imported/explobarrel.png-cc883fa707dab5377dce3c47c1e70e77.ctex"]
 
 [params]
 

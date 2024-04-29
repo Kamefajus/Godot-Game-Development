@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d246cxmilspc6"
-path="res://.godot/imported/Desert.png-d3e3fcfed5d09ca03be260dedd723faf.ctex"
+uid="uid://t2ef13gklx2e"
+path="res://.godot/imported/Desert Night_bg.png-67457753fb67d3d400e4a81c62e7905f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Desert.png"
-dest_files=["res://.godot/imported/Desert.png-d3e3fcfed5d09ca03be260dedd723faf.ctex"]
+source_file="res://Art/Models/Desert Night_bg.png"
+dest_files=["res://.godot/imported/Desert Night_bg.png-67457753fb67d3d400e4a81c62e7905f.ctex"]
 
 [params]
 

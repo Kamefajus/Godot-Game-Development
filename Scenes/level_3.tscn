@@ -7,7 +7,7 @@
 [ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point.gd" id="4_d7qy7"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point_array.gd" id="5_dxlb8"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material.gd" id="6_1j6eh"]
-[ext_resource type="Texture2D" uid="uid://drep1m7spob2r" path="res://Art/bamd.png" id="7_h60w7"]
+[ext_resource type="Texture2D" uid="uid://drep1m7spob2r" path="res://Art/Models/bamd.png" id="7_h60w7"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/normal_range.gd" id="8_2wnk4"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" id="9_62kmr"]
 [ext_resource type="Texture2D" uid="uid://02qxwumicdam" path="res://Art/ground-texture-soil-top-view-in-cartoon-style-with-stones-and-texture-seamless-game-interface-background-brown-earth-illustration-vector.jpg" id="10_yjif6"]
@@ -21,7 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://bppwt3niisu53" path="res://Scenes/barrel.tscn" id="19_esfkp"]
 [ext_resource type="PackedScene" uid="uid://bp3ollu21k188" path="res://Scenes/coin.tscn" id="20_4h4r1"]
 [ext_resource type="PackedScene" uid="uid://cu1kfvx47f76o" path="res://Scenes/music_ingame.tscn" id="21_428sp"]
-[ext_resource type="PackedScene" uid="uid://b36koxjrg7jvt" path="res://Scenes/level_completed_menu.tscn" id="22_gyqi5"]
+[ext_resource type="PackedScene" path="res://Scenes/level_completed_menu.tscn" id="22_gyqi5"]
 [ext_resource type="Script" path="res://Scenes/coin.gd" id="22_iiv2l"]
 
 [sub_resource type="Resource" id="Resource_ergfc"]

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/Menu.gd" id="1_cogtd"]
 [ext_resource type="Texture2D" uid="uid://c4hvxnkiy5pho" path="res://Art/OIG3 (1).jpg" id="2_maeap"]
-[ext_resource type="Texture2D" uid="uid://dk8wkuho2kva" path="res://Art/Models/sound-speaker-icon-on-white-background-free-vector.png" id="3_mcf6i"]
-[ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="4_t0fos"]
+[ext_resource type="Texture2D" path="res://Art/Models/sound-speaker-icon-on-white-background-free-vector.png" id="3_mcf6i"]
+[ext_resource type="PackedScene" path="res://fonine_menu_music.tscn" id="4_t0fos"]
 
 [sub_resource type="Animation" id="Animation_rldbx"]
 resource_name = "fade_out"

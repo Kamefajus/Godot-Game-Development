@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://syf0vlorkp5"]
+[gd_scene load_steps=3 format=3 uid="uid://k0p3uei4pedy"]
 
 [ext_resource type="Texture2D" uid="uid://c4hvxnkiy5pho" path="res://Art/OIG3 (1).jpg" id="1_8sikx"]
 [ext_resource type="Script" path="res://Scenes/level_select_screen.gd" id="1_tcwgt"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bryvxk0wuf1ra"
-path="res://.godot/imported/explobarrel.png-64d461d637de5843cf19115cfc9be12c.ctex"
+uid="uid://md16ormfxh7c"
+path="res://.godot/imported/2a636231c92664f1894bf0ada5c6a2bd.png-377af67f61becad7f43a137aa93b43c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Models/explobarrel.png"
-dest_files=["res://.godot/imported/explobarrel.png-64d461d637de5843cf19115cfc9be12c.ctex"]
+source_file="res://Art/Models/2a636231c92664f1894bf0ada5c6a2bd.png"
+dest_files=["res://.godot/imported/2a636231c92664f1894bf0ada5c6a2bd.png-377af67f61becad7f43a137aa93b43c5.ctex"]
 
 [params]
 
