@@ -2,6 +2,9 @@ extends Control
 
 @onready var transition = $Transition
 
+func _ready():
+	GlobalVariables.load()
+	
 func _on_play_pressed():
 	transition.play("fade_out")
 
