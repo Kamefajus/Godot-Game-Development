@@ -1,9 +1,9 @@
 extends RigidBody2D
 
-@export var speed = 50
+@export var speed = 100
 var player_chase = false
 var player = null
-var dmg = 25
+var dmg = 10
 var health = 100
 
 func _physics_process(delta):

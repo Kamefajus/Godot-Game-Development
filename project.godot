@@ -32,7 +32,7 @@ project/assembly_name="Godot Game Development"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/rmsmartshape/plugin.cfg")
 
 [input]
 
