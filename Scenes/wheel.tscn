@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1c1p0scto36d"]
+[gd_scene load_steps=6 format=3 uid="uid://d1c1p0scto36d"]
 
 [ext_resource type="Texture2D" uid="uid://b64dnwyv5urhx" path="res://Art/Images/Car/Wheel.png" id="1_hsvms"]
+[ext_resource type="Script" path="res://Scenes/wheel.gd" id="1_nafag"]
+[ext_resource type="Texture2D" uid="uid://d1tlvarurwmbe" path="res://Art/Images/Car/WheelBig.png" id="3_2808r"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4y3xu"]
 
@@ -9,6 +11,7 @@ radius = 43.0116
 
 [node name="wheel" type="RigidBody2D" groups=["Player", "wheel"]]
 physics_material_override = SubResource("PhysicsMaterial_4y3xu")
+script = ExtResource("1_nafag")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_l51hu")
@@ -16,3 +19,8 @@ shape = SubResource("CircleShape2D_l51hu")
 [node name="Wheel" type="Sprite2D" parent="."]
 scale = Vector2(0.671875, 0.671875)
 texture = ExtResource("1_hsvms")
+
+[node name="Wheel2" type="Sprite2D" parent="."]
+visible = false
+scale = Vector2(0.451416, 0.451416)
+texture = ExtResource("3_2808r")
