@@ -7,6 +7,7 @@
 script = ExtResource("1_0tgbs")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(15, 4)
 rotation = 0.528324
 texture = ExtResource("1_unkdt")
@@ -14,3 +15,10 @@ texture = ExtResource("1_unkdt")
 [node name="Marker2D" type="Marker2D" parent="."]
 light_mask = 3
 position = Vector2(83, 0)
+
+[node name="fakegun" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(15, 4)
+rotation = 0.528835
+scale = Vector2(1, 1)
+texture = ExtResource("1_unkdt")

@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://dyx4i5m8yp8cj"]
+[gd_scene load_steps=4 format=3 uid="uid://dyx4i5m8yp8cj"]
 
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_426sa"]
+[ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="2_unvt2"]
+[ext_resource type="AudioStream" uid="uid://cd38cbclil7ka" path="res://Audio/SFX/select.wav" id="3_g1ko6"]
 
 [node name="PauseMenu" type="Control"]
 z_index = 10
@@ -47,6 +49,11 @@ text = "Quit"
 layout_mode = 2
 toggle_mode = true
 text = "Mute Sound"
+
+[node name="Select" parent="." instance=ExtResource("2_unvt2")]
+stream = ExtResource("3_g1ko6")
+volume_db = -36.667
+bus = &"Music"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Restart" to="." method="_on_restart_pressed"]
