@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpamqo8x0fiak"]
+[gd_scene load_steps=6 format=3 uid="uid://dpamqo8x0fiak"]
 
 [ext_resource type="Script" path="res://Scripts/settings_menu.gd" id="1_ukuk8"]
 [ext_resource type="PackedScene" uid="uid://cpro8b75dsmvo" path="res://Scenes/settings_tab_container.tscn" id="2_y0nkd"]
+[ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="3_8tkqw"]
+[ext_resource type="AudioStream" uid="uid://cd38cbclil7ka" path="res://Audio/SFX/select.wav" id="4_tomep"]
 
 [sub_resource type="SystemFont" id="SystemFont_uue5h"]
 font_names = PackedStringArray("Impact")
@@ -50,5 +52,10 @@ custom_minimum_size = Vector2(120, 60)
 layout_mode = 2
 size_flags_vertical = 8
 text = "Back"
+
+[node name="Select" parent="." instance=ExtResource("3_8tkqw")]
+stream = ExtResource("4_tomep")
+volume_db = -36.667
+bus = &"Music"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

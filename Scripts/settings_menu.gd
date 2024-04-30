@@ -12,9 +12,11 @@ func _ready():
 	
 	
 func on_exit_pressed() -> void:
+	$Select.play()
 	exit_options_menu.emit()
 	set_process(false)
 	
 func _on_back_pressed():
+	$Select.play()
 	GlobalVariables.save()
 	get_tree().change_scene_to_file("res://Scenes/menu.tscn")

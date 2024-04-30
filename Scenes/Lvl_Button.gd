@@ -28,19 +28,21 @@ func grow_btn(end_size: Vector2, duration: float) -> void:
 
 
 func _on_button_pressed() -> void:
+	$Select.play()
 	get_tree().change_scene_to_file("res://Scenes/level_1.tscn")
 	
 
 
 func _on_button_2_pressed():
+	$Select.play()
 	get_tree().change_scene_to_file("res://Scenes/level_2.tscn")
 
 
 func _on_button_3_pressed():
-
+	$Select.play()
 	get_tree().change_scene_to_file("res://Scenes/level_3.tscn")
 
 
 func _on_button_4_pressed():
-
+	$Select.play()
 	get_tree().change_scene_to_file("res://Scenes/level_4.tscn")

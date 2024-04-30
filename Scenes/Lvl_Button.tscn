@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk3cfenni74jh"]
+[gd_scene load_steps=4 format=3 uid="uid://bk3cfenni74jh"]
 
 [ext_resource type="Script" path="res://Scenes/Lvl_Button.gd" id="1_4q4e7"]
+[ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="2_sie82"]
+[ext_resource type="AudioStream" uid="uid://cd38cbclil7ka" path="res://Audio/SFX/select.wav" id="3_bonrf"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -64,6 +66,11 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 50
 text = "Level 4"
 
+[node name="Select" parent="." instance=ExtResource("2_sie82")]
+stream = ExtResource("3_bonrf")
+volume_db = -36.667
+bus = &"Music"
+
 [connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
@@ -73,8 +80,8 @@ text = "Level 4"
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="mouse_entered" from="Button3" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Button3" to="." method="_on_button_mouse_exited"]
-[connection signal="pressed" from="Button3" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Button4" to="." method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Button4" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="Button4" to="." method="_on_button_pressed"]

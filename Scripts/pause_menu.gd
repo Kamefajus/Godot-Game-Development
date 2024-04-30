@@ -12,16 +12,19 @@ func _process(delta):
 			get_tree().paused = true
 			
 func _on_resume_pressed():
+	$Select.play()
 	hide()
 	get_tree().paused = false
 
 func _on_restart_pressed():
+	$Select.play()
 	GlobalVariables.coins += $"../Player".coins
 	GlobalVariables.save()
 	get_tree().paused = false
 	get_tree().reload_current_scene()
 
 func _on_quit_pressed():
+	$Select.play()
 	GlobalVariables.coins += $"../Player".coins
 	GlobalVariables.save()
 	get_tree().quit()
@@ -30,6 +33,7 @@ func _on_sound_pressed():
 	AudioServer.set_bus_mute(master_bus, not AudioServer.is_bus_mute(master_bus))
 
 func _on_back_to_main_menu_pressed():
+	$Select.play()
 	GlobalVariables.coins += $"../Player".coins
 	GlobalVariables.save()
 	get_tree().paused = false
