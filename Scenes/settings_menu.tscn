@@ -51,4 +51,16 @@ layout_mode = 2
 size_flags_vertical = 8
 text = "Back"
 
+<<<<<<< Updated upstream
+=======
+[node name="Select" parent="." instance=ExtResource("3_8tkqw")]
+stream = ExtResource("4_tomep")
+volume_db = -36.667
+bus = &"Music"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_8tkqw")]
+volume_db = -18.162
+bus = &"Music"
+
+>>>>>>> Stashed changes
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

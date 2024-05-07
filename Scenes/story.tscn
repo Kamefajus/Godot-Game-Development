@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://k0p3uei4pedy"]
+[gd_scene load_steps=5 format=3 uid="uid://bf1ds6y2lxu75"]
 
-[ext_resource type="Texture2D" uid="uid://c4hvxnkiy5pho" path="res://Art/OIG3 (1).jpg" id="1_8sikx"]
-[ext_resource type="Script" path="res://Scenes/level_select_screen.gd" id="1_tcwgt"]
+[ext_resource type="Script" path="res://Scenes/level_select_screen.gd" id="1_kobul"]
+[ext_resource type="Texture2D" uid="uid://c4hvxnkiy5pho" path="res://Art/OIG3 (1).jpg" id="2_x16og"]
+[ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="3_nywn2"]
+[ext_resource type="AudioStream" uid="uid://cd38cbclil7ka" path="res://Audio/SFX/select.wav" id="4_cgv1l"]
 
-[node name="LevelSelectScreen" type="Control"]
+[node name="Story" type="Control"]
 layout_mode = 3
 anchor_right = 1.044
 anchor_bottom = 1.082
@@ -11,7 +13,7 @@ offset_right = -90.688
 offset_bottom = -120.136
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_tcwgt")
+script = ExtResource("1_kobul")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -24,7 +26,7 @@ offset_right = 48.0
 offset_bottom = 73.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_8sikx")
+texture = ExtResource("2_x16og")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -36,14 +38,6 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 75
-text = "Select level"
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -77,31 +71,6 @@ size_flags_stretch_ratio = 0.0
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(150, 50)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Level 1"
-
-[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(150, 50)
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Level 2"
-
-[node name="Button3" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(150, 50)
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Level 3"
-
-[node name="Button4" type="Button" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(150, 50)
-layout_mode = 2
-size_flags_horizontal = 4
-text = "Level 4"
-
 [node name="Button5" type="Button" parent="."]
 layout_mode = 0
 offset_left = 52.0
@@ -111,20 +80,13 @@ offset_bottom = 603.0
 theme_override_font_sizes/font_size = 25
 text = "Back"
 
-<<<<<<< Updated upstream
-=======
-[node name="Select" parent="." instance=ExtResource("4_m7l7h")]
-stream = ExtResource("5_poxti")
+[node name="Select" parent="." instance=ExtResource("3_nywn2")]
+stream = ExtResource("4_cgv1l")
 volume_db = -36.667
 bus = &"Music"
 
-[node name="AudioStreamPlayer" parent="." instance=ExtResource("4_m7l7h")]
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_nywn2")]
 volume_db = -18.162
 bus = &"Music"
 
->>>>>>> Stashed changes
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]
 [connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

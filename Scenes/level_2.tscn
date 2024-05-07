@@ -23,7 +23,11 @@
 [ext_resource type="PackedScene" uid="uid://cu1kfvx47f76o" path="res://Scenes/music_ingame.tscn" id="19_2rcyg"]
 [ext_resource type="PackedScene" uid="uid://bp3ollu21k188" path="res://Scenes/coin.tscn" id="20_k1cl2"]
 
+<<<<<<< Updated upstream
 [sub_resource type="Resource" id="Resource_i3qje"]
+=======
+[sub_resource type="Resource" id="Resource_h5mtu"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -34,9 +38,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(-1535.27, -202.498)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_i3qje")
 
 [sub_resource type="Resource" id="Resource_mohj5"]
+=======
+properties = SubResource("Resource_h5mtu")
+
+[sub_resource type="Resource" id="Resource_tgsi1"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 1
 flip = false
@@ -47,9 +57,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(208.457, 23.5001)
 point_in = Vector2(-90.3797, 42.8115)
 point_out = Vector2(90.3797, -42.8115)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_mohj5")
 
 [sub_resource type="Resource" id="Resource_oni8y"]
+=======
+properties = SubResource("Resource_tgsi1")
+
+[sub_resource type="Resource" id="Resource_nd5x1"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -60,9 +76,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(850.492, -23.1163)
 point_in = Vector2(-47.5684, 52.3251)
 point_out = Vector2(47.5684, -52.3251)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_oni8y")
 
 [sub_resource type="Resource" id="Resource_g34os"]
+=======
+properties = SubResource("Resource_nd5x1")
+
+[sub_resource type="Resource" id="Resource_s0ycv"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -73,9 +95,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(1586.06, -84.5652)
 point_in = Vector2(-52.3252, 61.8389)
 point_out = Vector2(52.3252, -61.8389)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_g34os")
 
 [sub_resource type="Resource" id="Resource_swuxi"]
+=======
+properties = SubResource("Resource_s0ycv")
+
+[sub_resource type="Resource" id="Resource_1fn40"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 5
 flip = false
@@ -86,9 +114,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(1882.71, -131.182)
 point_in = Vector2(-80.8662, 61.8387)
 point_out = Vector2(80.8662, -61.8387)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_swuxi")
 
 [sub_resource type="Resource" id="Resource_nlore"]
+=======
+properties = SubResource("Resource_1fn40")
+
+[sub_resource type="Resource" id="Resource_bpgtv"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -99,9 +133,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(2130.62, -67.6137)
 point_in = Vector2(-76.1091, -71.3524)
 point_out = Vector2(76.1091, 71.3524)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_nlore")
 
 [sub_resource type="Resource" id="Resource_ao2vc"]
+=======
+properties = SubResource("Resource_bpgtv")
+
+[sub_resource type="Resource" id="Resource_pkydb"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -112,9 +152,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(2429.39, 76.4732)
 point_in = Vector2(-142.705, -38.0546)
 point_out = Vector2(142.705, 38.0546)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_ao2vc")
 
 [sub_resource type="Resource" id="Resource_228cs"]
+=======
+properties = SubResource("Resource_pkydb")
+
+[sub_resource type="Resource" id="Resource_7pyv2"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -125,9 +171,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(43036.2, 40.1924)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_228cs")
 
 [sub_resource type="Resource" id="Resource_wpqpl"]
+=======
+properties = SubResource("Resource_7pyv2")
+
+[sub_resource type="Resource" id="Resource_10eof"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -138,9 +190,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(43171.3, 502.482)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_wpqpl")
 
 [sub_resource type="Resource" id="Resource_05wyy"]
+=======
+properties = SubResource("Resource_10eof")
+
+[sub_resource type="Resource" id="Resource_8w7fw"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -151,9 +209,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(605.101, 635.87)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_05wyy")
 
 [sub_resource type="Resource" id="Resource_7naw6"]
+=======
+properties = SubResource("Resource_8w7fw")
+
+[sub_resource type="Resource" id="Resource_f4ubf"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -164,9 +228,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(-1477.97, 1048.97)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_7naw6")
 
 [sub_resource type="Resource" id="Resource_csydw"]
+=======
+properties = SubResource("Resource_f4ubf")
+
+[sub_resource type="Resource" id="Resource_i0mgq"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -177,9 +247,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(-1535.27, -202.498)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_csydw")
 
 [sub_resource type="Resource" id="Resource_e2ncs"]
+=======
+properties = SubResource("Resource_i0mgq")
+
+[sub_resource type="Resource" id="Resource_2v0p2"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -190,9 +266,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(5477.67, 684.928)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_e2ncs")
 
 [sub_resource type="Resource" id="Resource_6vnfe"]
+=======
+properties = SubResource("Resource_2v0p2")
+
+[sub_resource type="Resource" id="Resource_6q6g3"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -203,9 +285,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(3348.1, -66.6158)
 point_in = Vector2(-152.172, -48.0543)
 point_out = Vector2(152.172, 48.0543)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_6vnfe")
 
 [sub_resource type="Resource" id="Resource_oljf8"]
+=======
+properties = SubResource("Resource_6q6g3")
+
+[sub_resource type="Resource" id="Resource_osrbi"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -216,9 +304,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(3760.49, 185.229)
 point_in = Vector2(-77.4207, -88.0994)
 point_out = Vector2(77.4207, 88.0994)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_oljf8")
 
 [sub_resource type="Resource" id="Resource_kfqnc"]
+=======
+properties = SubResource("Resource_osrbi")
+
+[sub_resource type="Resource" id="Resource_puce6"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -229,9 +323,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(4134.25, 308.034)
 point_in = Vector2(-136.153, -32.0361)
 point_out = Vector2(136.153, 32.0361)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_kfqnc")
 
 [sub_resource type="Resource" id="Resource_sg1eg"]
+=======
+properties = SubResource("Resource_puce6")
+
+[sub_resource type="Resource" id="Resource_jsl74"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -242,9 +342,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(4696.05, 201.247)
 point_in = Vector2(-98.7783, 50.7239)
 point_out = Vector2(98.7783, -50.7239)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_sg1eg")
 
 [sub_resource type="Resource" id="Resource_echla"]
+=======
+properties = SubResource("Resource_jsl74")
+
+[sub_resource type="Resource" id="Resource_48j6q"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -255,9 +361,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(5091.16, 324.052)
 point_in = Vector2(-80.0903, 8.00903)
 point_out = Vector2(80.0903, -8.00903)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_echla")
 
 [sub_resource type="Resource" id="Resource_ca44l"]
+=======
+properties = SubResource("Resource_48j6q")
+
+[sub_resource type="Resource" id="Resource_c5wuv"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -268,9 +380,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(6115.46, -84.4088)
 point_in = Vector2(-101.448, 10.6787)
 point_out = Vector2(101.448, -10.6787)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_ca44l")
 
 [sub_resource type="Resource" id="Resource_52wwg"]
+=======
+properties = SubResource("Resource_c5wuv")
+
+[sub_resource type="Resource" id="Resource_f8px7"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -281,9 +399,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(7286.08, 476.224)
 point_in = Vector2(-157.511, 16.0181)
 point_out = Vector2(157.511, -16.0181)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_52wwg")
 
 [sub_resource type="Resource" id="Resource_eqngh"]
+=======
+properties = SubResource("Resource_f8px7")
+
+[sub_resource type="Resource" id="Resource_yhd4q"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -294,9 +418,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(7865, 324.052)
 point_in = Vector2(-58.7324, 53.3937)
 point_out = Vector2(58.7324, -53.3937)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_eqngh")
 
 [sub_resource type="Resource" id="Resource_ppvns"]
+=======
+properties = SubResource("Resource_yhd4q")
+
+[sub_resource type="Resource" id="Resource_333ay"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -307,9 +437,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(8745.08, 163.871)
 point_in = Vector2(-93.4385, 32.0361)
 point_out = Vector2(93.4385, -32.0361)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_ppvns")
 
 [sub_resource type="Resource" id="Resource_qsr8w"]
+=======
+properties = SubResource("Resource_333ay")
+
+[sub_resource type="Resource" id="Resource_wu7gc"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -320,9 +456,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(9231.29, 230.613)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_qsr8w")
 
 [sub_resource type="Resource" id="Resource_0wdam"]
+=======
+properties = SubResource("Resource_wu7gc")
+
+[sub_resource type="Resource" id="Resource_1xl77"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -333,9 +475,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(10097.6, 91.7901)
 point_in = Vector2(-101.448, -32.0362)
 point_out = Vector2(101.448, 32.0362)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_0wdam")
 
 [sub_resource type="Resource" id="Resource_xo41f"]
+=======
+properties = SubResource("Resource_1xl77")
+
+[sub_resource type="Resource" id="Resource_k2xgh"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -346,9 +494,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(10961.2, 182.559)
 point_in = Vector2(-61.4033, -48.0542)
 point_out = Vector2(61.4033, 48.0542)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_xo41f")
 
 [sub_resource type="Resource" id="Resource_7k0la"]
+=======
+properties = SubResource("Resource_k2xgh")
+
+[sub_resource type="Resource" id="Resource_wamte"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -359,9 +513,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(11126.4, 329.392)
 point_in = Vector2(-85.4307, -37.3755)
 point_out = Vector2(85.4307, 37.3755)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_7k0la")
 
 [sub_resource type="Resource" id="Resource_j5p0d"]
+=======
+properties = SubResource("Resource_wamte")
+
+[sub_resource type="Resource" id="Resource_ce6rk"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -372,9 +532,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(11762.4, 286.677)
 point_in = Vector2(-53.3945, 48.0542)
 point_out = Vector2(53.3945, -48.0542)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_j5p0d")
 
 [sub_resource type="Resource" id="Resource_i74oj"]
+=======
+properties = SubResource("Resource_ce6rk")
+
+[sub_resource type="Resource" id="Resource_di1ra"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -385,9 +551,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(12476.5, 35.7268)
 point_in = Vector2(-69.4111, -42.7148)
 point_out = Vector2(69.4111, 42.7148)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_i74oj")
 
 [sub_resource type="Resource" id="Resource_repv0"]
+=======
+properties = SubResource("Resource_di1ra")
+
+[sub_resource type="Resource" id="Resource_2lrvk"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -398,9 +570,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(13294.4, 225.274)
 point_in = Vector2(-77.4209, -37.3755)
 point_out = Vector2(77.4209, 37.3755)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_repv0")
 
 [sub_resource type="Resource" id="Resource_m1vhl"]
+=======
+properties = SubResource("Resource_2lrvk")
+
+[sub_resource type="Resource" id="Resource_8r7in"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -411,9 +589,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(14098.2, 329.392)
 point_in = Vector2(-40.0459, 37.3755)
 point_out = Vector2(40.0459, -37.3755)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_m1vhl")
 
 [sub_resource type="Resource" id="Resource_7eq41"]
+=======
+properties = SubResource("Resource_8r7in")
+
+[sub_resource type="Resource" id="Resource_xwr3w"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -424,9 +608,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(14984.1, 171.88)
 point_in = Vector2(-117.466, 45.3845)
 point_out = Vector2(117.466, -45.3845)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_7eq41")
 
 [sub_resource type="Resource" id="Resource_2s276"]
+=======
+properties = SubResource("Resource_xwr3w")
+
+[sub_resource type="Resource" id="Resource_kyfqx"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -437,9 +627,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(15555.1, 393.464)
 point_in = Vector2(-13.3486, 34.7058)
 point_out = Vector2(13.3486, -34.7058)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_2s276")
 
 [sub_resource type="Resource" id="Resource_ccbsg"]
+=======
+properties = SubResource("Resource_kyfqx")
+
+[sub_resource type="Resource" id="Resource_rjxjf"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -450,9 +646,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(16497.3, 470.885)
 point_in = Vector2(-98.7773, 0)
 point_out = Vector2(98.7773, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_ccbsg")
 
 [sub_resource type="Resource" id="Resource_fjlgy"]
+=======
+properties = SubResource("Resource_rjxjf")
+
+[sub_resource type="Resource" id="Resource_uslm1"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -463,9 +665,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(16457.2, 1223.73)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_fjlgy")
 
 [sub_resource type="Resource" id="Resource_o8e7p"]
+=======
+properties = SubResource("Resource_uslm1")
+
+[sub_resource type="Resource" id="Resource_g7b4r"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -476,9 +684,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(16772.4, 569.663)
 point_in = Vector2(-74.752, -21.3574)
 point_out = Vector2(74.752, 21.3574)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_o8e7p")
 
 [sub_resource type="Resource" id="Resource_haxd3"]
+=======
+properties = SubResource("Resource_g7b4r")
+
+[sub_resource type="Resource" id="Resource_nslr2"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -489,9 +703,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(17586.3, 674.952)
 point_in = Vector2(-50.7246, 32.0361)
 point_out = Vector2(50.7246, -32.0361)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_haxd3")
 
 [sub_resource type="Resource" id="Resource_i1d5h"]
+=======
+properties = SubResource("Resource_nslr2")
+
+[sub_resource type="Resource" id="Resource_175q7"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -502,9 +722,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(19455.8, 37.537)
 point_in = Vector2(-72.082, -61.4026)
 point_out = Vector2(72.082, 61.4026)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_i1d5h")
 
 [sub_resource type="Resource" id="Resource_m05xu"]
+=======
+properties = SubResource("Resource_175q7")
+
+[sub_resource type="Resource" id="Resource_gouj1"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -515,9 +741,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(21124.9, 322.947)
 point_in = Vector2(-53.3945, -58.7329)
 point_out = Vector2(53.3945, 58.7329)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_m05xu")
 
 [sub_resource type="Resource" id="Resource_5uc3u"]
+=======
+properties = SubResource("Resource_gouj1")
+
+[sub_resource type="Resource" id="Resource_om1dr"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -528,9 +760,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(21608.8, 713.418)
 point_in = Vector2(-66.7422, 53.3937)
 point_out = Vector2(66.7422, -53.3937)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_5uc3u")
 
 [sub_resource type="Resource" id="Resource_3rxh8"]
+=======
+properties = SubResource("Resource_om1dr")
+
+[sub_resource type="Resource" id="Resource_crnem"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -541,9 +779,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(23682.4, 192.007)
 point_in = Vector2(-90.7715, -10.6788)
 point_out = Vector2(90.7715, 10.6788)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_3rxh8")
 
 [sub_resource type="Resource" id="Resource_srfk4"]
+=======
+properties = SubResource("Resource_crnem")
+
+[sub_resource type="Resource" id="Resource_mq1tn"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -554,9 +798,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(24614.4, 286.828)
 point_in = Vector2(-24.0273, 26.6968)
 point_out = Vector2(24.0273, -26.6968)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_srfk4")
 
 [sub_resource type="Resource" id="Resource_4op1k"]
+=======
+properties = SubResource("Resource_mq1tn")
+
+[sub_resource type="Resource" id="Resource_nxc6r"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -567,9 +817,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(25687.2, 190.937)
 point_in = Vector2(-58.7324, 29.3665)
 point_out = Vector2(58.7324, -29.3665)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_4op1k")
 
 [sub_resource type="Resource" id="Resource_340ab"]
+=======
+properties = SubResource("Resource_nxc6r")
+
+[sub_resource type="Resource" id="Resource_hyr8e"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -580,9 +836,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(26382.4, 460.632)
 point_in = Vector2(-72.082, 53.3936)
 point_out = Vector2(72.082, -53.3936)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_340ab")
 
 [sub_resource type="Resource" id="Resource_l8r0d"]
+=======
+properties = SubResource("Resource_hyr8e")
+
+[sub_resource type="Resource" id="Resource_xdjf7"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -593,9 +855,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(27601.1, 250.869)
 point_in = Vector2(-106.787, 50.7239)
 point_out = Vector2(106.787, -50.7239)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_l8r0d")
 
 [sub_resource type="Resource" id="Resource_mwd3x"]
+=======
+properties = SubResource("Resource_xdjf7")
+
+[sub_resource type="Resource" id="Resource_j6d82"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -606,9 +874,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(28922.6, 334.774)
 point_in = Vector2(-85.4297, 26.6968)
 point_out = Vector2(85.4297, -26.6968)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_mwd3x")
 
 [sub_resource type="Resource" id="Resource_iwah4"]
+=======
+properties = SubResource("Resource_j6d82")
+
+[sub_resource type="Resource" id="Resource_4inb7"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -619,9 +893,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(30822, 514.571)
 point_in = Vector2(-48.0547, 45.3846)
 point_out = Vector2(48.0547, -45.3846)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_iwah4")
 
 [sub_resource type="Resource" id="Resource_vy527"]
+=======
+properties = SubResource("Resource_4inb7")
+
+[sub_resource type="Resource" id="Resource_2i0ys"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -632,9 +912,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(32464.2, 220.903)
 point_in = Vector2(-64.0723, 48.0543)
 point_out = Vector2(64.0723, -48.0543)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_vy527")
 
 [sub_resource type="Resource" id="Resource_trjio"]
+=======
+properties = SubResource("Resource_2i0ys")
+
+[sub_resource type="Resource" id="Resource_3j4r2"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -645,9 +931,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(32981.4, 436.659)
 point_in = Vector2(-66.7383, 56.0632)
 point_out = Vector2(66.7383, -56.0632)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_trjio")
 
 [sub_resource type="Resource" id="Resource_n4q4h"]
+=======
+properties = SubResource("Resource_3j4r2")
+
+[sub_resource type="Resource" id="Resource_xr7o0"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -658,9 +950,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(33655.1, 172.957)
 point_in = Vector2(-98.7773, -18.6878)
 point_out = Vector2(98.7773, 18.6878)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_n4q4h")
 
 [sub_resource type="Resource" id="Resource_76br8"]
+=======
+properties = SubResource("Resource_xr7o0")
+
+[sub_resource type="Resource" id="Resource_xh21w"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -671,9 +969,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(35166.6, 388.713)
 point_in = Vector2(-24.0273, 34.7058)
 point_out = Vector2(24.0273, -34.7058)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_76br8")
 
 [sub_resource type="Resource" id="Resource_qiry3"]
+=======
+properties = SubResource("Resource_xh21w")
+
+[sub_resource type="Resource" id="Resource_bf755"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -684,9 +988,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(36506.7, 214.91)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_qiry3")
 
 [sub_resource type="Resource" id="Resource_k5g7v"]
+=======
+properties = SubResource("Resource_bf755")
+
+[sub_resource type="Resource" id="Resource_gtcgx"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -697,9 +1007,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(38033.4, 298.815)
 point_in = Vector2(-56.0625, 16.0181)
 point_out = Vector2(56.0625, -16.0181)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_k5g7v")
 
 [sub_resource type="Resource" id="Resource_mijcb"]
+=======
+properties = SubResource("Resource_gtcgx")
+
+[sub_resource type="Resource" id="Resource_m1gpu"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -710,9 +1026,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(38728.7, 202.923)
 point_in = Vector2(-74.7539, 29.3665)
 point_out = Vector2(74.7539, -29.3665)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_mijcb")
 
 [sub_resource type="Resource" id="Resource_75p64"]
+=======
+properties = SubResource("Resource_m1gpu")
+
+[sub_resource type="Resource" id="Resource_t7t28"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -723,9 +1045,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(39729.5, 298.815)
 point_in = Vector2(-69.4141, -32.0361)
 point_out = Vector2(69.4141, 32.0361)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_75p64")
 
 [sub_resource type="Resource" id="Resource_wanfs"]
+=======
+properties = SubResource("Resource_t7t28")
+
+[sub_resource type="Resource" id="Resource_ssx7j"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -736,9 +1064,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(40346.8, 136.998)
 point_in = Vector2(-53.3906, 50.7239)
 point_out = Vector2(53.3906, -50.7239)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_wanfs")
 
 [sub_resource type="Resource" id="Resource_sspjs"]
+=======
+properties = SubResource("Resource_ssx7j")
+
+[sub_resource type="Resource" id="Resource_6pujx"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -749,9 +1083,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(31409.1, 1101.36)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_sspjs")
 
 [sub_resource type="Resource" id="Resource_1hbxt"]
+=======
+properties = SubResource("Resource_6pujx")
+
+[sub_resource type="Resource" id="Resource_x3n2r"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -762,9 +1102,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(35328.1, 1122.53)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_1hbxt")
 
 [sub_resource type="Resource" id="Resource_e0m2t"]
+=======
+properties = SubResource("Resource_x3n2r")
+
+[sub_resource type="Resource" id="Resource_6nses"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -775,9 +1121,15 @@ script = ExtResource("4_oijr7")
 position = Vector2(40865.7, 1218.64)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_e0m2t")
 
 [sub_resource type="Resource" id="Resource_viqj6"]
+=======
+properties = SubResource("Resource_6nses")
+
+[sub_resource type="Resource" id="Resource_qjcvb"]
+>>>>>>> Stashed changes
 script = ExtResource("3_be8vt")
 texture_idx = 0
 flip = false
@@ -788,7 +1140,11 @@ script = ExtResource("4_oijr7")
 position = Vector2(42695.6, 1143.89)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
+<<<<<<< Updated upstream
 properties = SubResource("Resource_viqj6")
+=======
+properties = SubResource("Resource_qjcvb")
+>>>>>>> Stashed changes
 
 [sub_resource type="Resource" id="Resource_5l4cw"]
 script = ExtResource("5_dtkoi")

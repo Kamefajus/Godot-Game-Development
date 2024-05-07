@@ -55,7 +55,33 @@ text = "Settings"
 layout_mode = 2
 text = "Exit"
 
+<<<<<<< Updated upstream
+=======
+[node name="Music" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music"
+icon = ExtResource("3_mcf6i")
+
+[node name="Story" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Story"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("4_t0fos")]
+volume_db = -18.162
+bus = &"Music"
+
+[node name="Select" parent="." instance=ExtResource("4_t0fos")]
+stream = ExtResource("5_yjp80")
+volume_db = -36.667
+bus = &"Music"
+
+>>>>>>> Stashed changes
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Upgrades" to="." method="_on_upgrades_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+<<<<<<< Updated upstream
+=======
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Music" to="." method="_on_music_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Story" to="." method="_on_story_pressed"]
+>>>>>>> Stashed changes
