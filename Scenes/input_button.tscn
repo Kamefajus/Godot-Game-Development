@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5v01cjmbt525"]
+[gd_scene load_steps=4 format=3 uid="uid://c5v01cjmbt525"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mfu0f"]
 bg_color = Color(0, 0, 0, 0.392157)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rn5og"]
 bg_color = Color(1, 1, 1, 0.392157)
+
+[sub_resource type="SystemFont" id="SystemFont_wl1ra"]
+font_names = PackedStringArray("Impact")
 
 [node name="InputButton" type="Button"]
 custom_minimum_size = Vector2(0, 18)
@@ -42,6 +45,9 @@ layout_mode = 2
 [node name="LabelAction" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_wl1ra")
 text = "Action name"
 vertical_alignment = 1
 
@@ -53,5 +59,8 @@ mouse_filter = 1
 [node name="LabelInput" type="Label" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
 mouse_filter = 1
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_wl1ra")
 text = "Action name"
 vertical_alignment = 1

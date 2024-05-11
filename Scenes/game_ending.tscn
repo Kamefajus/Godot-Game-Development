@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c04ooklhcmjkc"]
+
+[ext_resource type="Script" path="res://Game_Ending.gd" id="1_o364x"]
+[ext_resource type="Texture2D" uid="uid://b83q3bg8vajyf" path="res://Art/output (1).png" id="2_0d7fg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sng28"]
+size = Vector2(211, 355)
+
+[node name="Game_Ending" type="Area2D"]
+script = ExtResource("1_o364x")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(341.313, -92.5)
+scale = Vector2(0.389282, 0.389648)
+texture = ExtResource("2_0d7fg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(431.5, -111.5)
+shape = SubResource("RectangleShape2D_sng28")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://jwdebifbdgfi"]
+[gd_scene load_steps=34 format=3 uid="uid://jwdebifbdgfi"]
 
 [ext_resource type="Script" path="res://Scripts/Garage.gd" id="1_5hmaa"]
 [ext_resource type="Texture2D" uid="uid://chgvfipvqotos" path="res://Art/shachar-tzin-garage-background-color.jpg" id="2_7fff5"]
@@ -18,10 +18,13 @@
 [ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point_array.gd" id="16_qfx7u"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/materials/shape_material.gd" id="17_2yln7"]
 
+[sub_resource type="SystemFont" id="SystemFont_e4uvf"]
+font_names = PackedStringArray("Impact")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
 size = Vector2(523.147, 56.6124)
 
-[sub_resource type="Resource" id="Resource_ahvgg"]
+[sub_resource type="Resource" id="Resource_yc2v6"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -32,9 +35,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_ahvgg")
+properties = SubResource("Resource_yc2v6")
 
-[sub_resource type="Resource" id="Resource_sg26u"]
+[sub_resource type="Resource" id="Resource_2hauj"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -45,9 +48,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(538.363, 578.06)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_sg26u")
+properties = SubResource("Resource_2hauj")
 
-[sub_resource type="Resource" id="Resource_dj27f"]
+[sub_resource type="Resource" id="Resource_cnn2s"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -58,9 +61,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(526.349, 610.097)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_dj27f")
+properties = SubResource("Resource_cnn2s")
 
-[sub_resource type="Resource" id="Resource_6s1w7"]
+[sub_resource type="Resource" id="Resource_s0fa4"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -71,9 +74,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(490.309, 607.427)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_6s1w7")
+properties = SubResource("Resource_s0fa4")
 
-[sub_resource type="Resource" id="Resource_3sx0t"]
+[sub_resource type="Resource" id="Resource_fusn1"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -84,9 +87,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(165.942, 603.422)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_3sx0t")
+properties = SubResource("Resource_fusn1")
 
-[sub_resource type="Resource" id="Resource_5ep8i"]
+[sub_resource type="Resource" id="Resource_7nyt3"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -97,7 +100,7 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_5ep8i")
+properties = SubResource("Resource_7nyt3")
 
 [sub_resource type="Resource" id="Resource_v4jk1"]
 script = ExtResource("16_qfx7u")
@@ -164,6 +167,9 @@ offset_bottom = 661.354
 
 [node name="Back_Button" type="Button" parent="VBoxContainer2"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_e4uvf")
 text = "Back to Main Menu"
 
 [node name="Armor" type="Sprite2D" parent="."]

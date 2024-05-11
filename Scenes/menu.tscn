@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpskvver0df1c"]
+[gd_scene load_steps=7 format=3 uid="uid://dpskvver0df1c"]
 
 [ext_resource type="Script" path="res://Scripts/Menu.gd" id="1_cogtd"]
 [ext_resource type="Texture2D" uid="uid://c4hvxnkiy5pho" path="res://Art/OIG3 (1).jpg" id="2_maeap"]
 [ext_resource type="Texture2D" uid="uid://dk8wkuho2kva" path="res://Art/Models/sound-speaker-icon-on-white-background-free-vector.png" id="3_mcf6i"]
 [ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="4_t0fos"]
 [ext_resource type="AudioStream" uid="uid://cd38cbclil7ka" path="res://Audio/SFX/select.wav" id="5_yjp80"]
+
+[sub_resource type="SystemFont" id="SystemFont_3hy6a"]
+font_names = PackedStringArray("Impact")
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -44,22 +47,37 @@ alignment = 1
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_3hy6a")
 text = "Play"
 
 [node name="Upgrades" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_3hy6a")
 text = "Upgrades"
 
 [node name="Settings" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_3hy6a")
 text = "Settings"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_3hy6a")
 text = "Exit"
 
 [node name="Music" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_3hy6a")
 text = "Music"
 icon = ExtResource("3_mcf6i")
 

@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2ablgnixvgwj"]
+[gd_scene load_steps=4 format=3 uid="uid://c2ablgnixvgwj"]
 
 [ext_resource type="Script" path="res://input_settings.gd" id="1_qbipn"]
 [ext_resource type="PackedScene" uid="uid://c5v01cjmbt525" path="res://Scenes/input_button.tscn" id="2_lmkdw"]
+
+[sub_resource type="SystemFont" id="SystemFont_uqj5y"]
+font_names = PackedStringArray("Impact")
 
 [node name="input_settings" type="Control"]
 layout_mode = 3
@@ -45,6 +48,9 @@ layout_mode = 2
 [node name="ResetButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_uqj5y")
 text = "Reset to default"
 
 [connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/ResetButton" to="." method="_on_reset_button_pressed"]

@@ -20,5 +20,4 @@ position = Vector2(83, 0)
 visible = false
 position = Vector2(15, 4)
 rotation = 0.528835
-scale = Vector2(1, 1)
 texture = ExtResource("1_unkdt")

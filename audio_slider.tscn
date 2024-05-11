@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo316v6c55a1p"]
+[gd_scene load_steps=3 format=3 uid="uid://bo316v6c55a1p"]
 
 [ext_resource type="Script" path="res://audio_slider.gd" id="1_26rsu"]
+
+[sub_resource type="SystemFont" id="SystemFont_qcbc6"]
+font_names = PackedStringArray("Impact")
 
 [node name="Audio_Slider" type="Control"]
 layout_mode = 3
@@ -21,6 +24,9 @@ theme_override_constants/separation = 42
 [node name="Audio_Name_Lbl" type="Label" parent="HBoxContainer"]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_qcbc6")
 theme_override_font_sizes/font_size = 32
 text = "Master Volume"
 
@@ -40,6 +46,9 @@ layout_mode = 2
 [node name="Audio_Num_Lbl" type="Label" parent="HBoxContainer"]
 custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_qcbc6")
 theme_override_font_sizes/font_size = 32
 text = "99.2
 "
