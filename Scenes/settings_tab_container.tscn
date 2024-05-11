@@ -7,6 +7,7 @@
 
 [sub_resource type="SystemFont" id="SystemFont_hsuj0"]
 font_names = PackedStringArray("Impact")
+subpixel_positioning = 0
 
 [node name="Settings_Tab_Container" type="Control"]
 layout_mode = 3
@@ -67,7 +68,6 @@ bus_name = "Music"
 
 [node name="Audio_Slider3" parent="TabContainer/Sound/MarginContainer/ScrollContainer/VBoxContainer" instance=ExtResource("1_w0ete")]
 layout_mode = 2
-bus_name = "Sound effect"
 
 [node name="Graphics" type="TabBar" parent="TabContainer"]
 layout_mode = 2

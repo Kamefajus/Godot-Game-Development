@@ -43,4 +43,18 @@ func shoot():
 	get_parent().add_child(bullet)
 	bullet.global_position = $Marker2D.global_position
 	bullet.velocity = nearest.global_position - bullet.global_position
+	
+	# play sound
+	var r = randi_range(1,5) #RandomNumberGenerator.new().randf_range(1, 5)
+	match r:
+		1:
+			$Shoot1.play()
+		2:
+			$Shoot2.play()
+		3:
+			$Shoot3.play()
+		4:
+			$Shoot4.play()
+		5:
+			$Shoot5.play()
 	pass
