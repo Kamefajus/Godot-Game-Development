@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://g1sk5dt552nc"]
+[gd_scene load_steps=8 format=3 uid="uid://g1sk5dt552nc"]
 
 [ext_resource type="Script" path="res://Scenes/gun.gd" id="1_0tgbs"]
 [ext_resource type="Texture2D" uid="uid://dux4du1kvt0cs" path="res://Art/Models/Upgrade models/gun.png" id="1_unkdt"]
+[ext_resource type="AudioStream" uid="uid://bu5oue1qguhmr" path="res://Audio/SFX/hit1.wav" id="3_qflcy"]
+[ext_resource type="AudioStream" uid="uid://bg1ehjut4mce6" path="res://Audio/SFX/hit2.wav" id="4_66gal"]
+[ext_resource type="AudioStream" uid="uid://y86ldkmxubsy" path="res://Audio/SFX/hit3.wav" id="5_p5dsd"]
+[ext_resource type="AudioStream" uid="uid://b8kiqc10b84l8" path="res://Audio/SFX/hit4.wav" id="6_bgb12"]
+[ext_resource type="AudioStream" uid="uid://l4avhlndct43" path="res://Audio/SFX/hit5.wav" id="7_oxlrx"]
 
 [node name="Gun" type="Node2D"]
 script = ExtResource("1_0tgbs")
@@ -21,3 +26,23 @@ visible = false
 position = Vector2(15, 4)
 rotation = 0.528835
 texture = ExtResource("1_unkdt")
+
+[node name="Shoot1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_qflcy")
+bus = &"Sfx"
+
+[node name="Shoot2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_66gal")
+bus = &"Sfx"
+
+[node name="Shoot3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_p5dsd")
+bus = &"Sfx"
+
+[node name="Shoot4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_bgb12")
+bus = &"Sfx"
+
+[node name="Shoot5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_oxlrx")
+bus = &"Sfx"

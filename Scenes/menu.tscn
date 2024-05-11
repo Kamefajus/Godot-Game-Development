@@ -82,13 +82,10 @@ text = "Music"
 icon = ExtResource("3_mcf6i")
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("4_t0fos")]
-volume_db = -36.667
-bus = &"Music"
 
-[node name="Select" parent="." instance=ExtResource("4_t0fos")]
+[node name="Select" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_yjp80")
-volume_db = -36.667
-bus = &"Music"
+bus = &"Sfx"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Upgrades" to="." method="_on_upgrades_pressed"]
