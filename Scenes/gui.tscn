@@ -93,3 +93,17 @@ offset_top = 1.0
 offset_right = -5.0
 offset_bottom = 24.0
 text = "Progress"
+
+[node name="boost" type="ProgressBar" parent="."]
+offset_left = 126.0
+offset_top = 237.0
+offset_right = 261.0
+offset_bottom = 264.0
+
+[node name="Label" type="Label" parent="boost"]
+layout_mode = 0
+offset_left = -65.0
+offset_top = 1.0
+offset_right = -13.0
+offset_bottom = 24.0
+text = "Boost"
