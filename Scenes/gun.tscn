@@ -46,3 +46,14 @@ bus = &"Sfx"
 [node name="Shoot5" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_oxlrx")
 bus = &"Sfx"
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 0)
+collision_mask = 255
+collide_with_areas = true
+
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(83, 0)
+closed = true
+width = 2.0
+default_color = Color(1, 0, 0, 1)
