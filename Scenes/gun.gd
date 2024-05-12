@@ -14,7 +14,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):	
 	var lvl_name = get_parent().name
-	print(lvl_name)
 	if GlobalVariables.gun > 0 && lvl_name != 'Player':
 		$fakegun.visible = true
 		$Sprite2D.visible = false
@@ -26,8 +25,23 @@ func _process(delta):
 		for enemy in enemies:
 			if enemy.global_position.distance_to(self.global_position) < nearest.global_position.distance_to(self.global_position):
 				nearest = enemy
-		
-		self.look_at(nearest.global_position)
+				
+		$RayCast2D.target_position = nearest.position
+		$Line2D.points = PackedVector2Array([$RayCast2D.position, $RayCast2D.target_position])
+		if $RayCast2D.is_colliding():
+			if $RayCast2D.get_collider():
+				if $RayCast2D.get_collider().get_name() == "Player" || $RayCast2D.get_collider().get_name() == "Detection_Area":
+					$RayCast2D.add_exception($RayCast2D.get_collider())
+				if $RayCast2D.get_collider().get_name().contains("Enemy"):
+					self.look_at(nearest.position)
+					$Line2D.visible = true
+				else:
+					$Line2D.visible = false
+					self.rotation = 0
+			pass
+		else:
+			$Line2D.visible = false
+			self.rotation = 0
 		
 		if curr_delay > 0: 
 			curr_delay-=1
