@@ -1,14 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://mynxpwywq7wi"]
+[gd_scene load_steps=8 format=3 uid="uid://mynxpwywq7wi"]
 
 [ext_resource type="Script" path="res://Scripts/player-.gd" id="1_8ntwr"]
 [ext_resource type="PackedScene" uid="uid://d1c1p0scto36d" path="res://Scenes/wheel.tscn" id="1_rqh6f"]
 [ext_resource type="PackedScene" uid="uid://g1sk5dt552nc" path="res://Scenes/gun.tscn" id="2_w8yh8"]
 [ext_resource type="Texture2D" uid="uid://cnv7aliiogdn7" path="res://Art/Images/Car/RedCar.png" id="3_jpo42"]
+[ext_resource type="AudioStream" uid="uid://04w3sac38bh8" path="res://Audio/Background music/videogame-death-sound-43894.mp3" id="5_4o3g5"]
+[ext_resource type="PackedScene" uid="uid://1s8kf4fpifeg" path="res://Scenes/ouch.tscn" id="6_66800"]
+[ext_resource type="AudioStream" uid="uid://b8kiqc10b84l8" path="res://Audio/SFX/hit4.wav" id="7_a2fcb"]
 
 [node name="Player" type="RigidBody2D" groups=["Player"]]
 position = Vector2(-1, -12)
 collision_layer = 3
 mass = 0.08
+max_contacts_reported = 1
+contact_monitor = true
 script = ExtResource("1_8ntwr")
 
 [node name="Gun" parent="." instance=ExtResource("2_w8yh8")]
@@ -42,3 +47,13 @@ polygon = PackedVector2Array(-151, -52, -137, -64, -83, -66, -53, -43, 1, -43, 1
 position = Vector2(15, -20)
 scale = Vector2(0.737311, 0.733739)
 texture = ExtResource("3_jpo42")
+
+[node name="gg" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_4o3g5")
+
+[node name="Ouch" parent="." instance=ExtResource("6_66800")]
+
+[node name="barsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_a2fcb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

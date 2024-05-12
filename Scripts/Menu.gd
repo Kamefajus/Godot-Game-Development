@@ -28,3 +28,7 @@ func _on_transition_animation_finished(anim_name):
 
 func _on_music_pressed():
 	AudioServer.set_bus_mute(music_bus, not AudioServer.is_bus_mute(music_bus))
+
+
+func _on_story_pressed():
+	get_tree().change_scene_to_file("res://Scenes/story.tscn")
