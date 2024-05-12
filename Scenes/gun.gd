@@ -38,7 +38,6 @@ func _process(delta):
 				else:
 					$Line2D.visible = false
 					self.rotation = 0
-			pass
 		else:
 			$Line2D.visible = false
 			self.rotation = 0
