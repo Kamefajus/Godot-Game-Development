@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://mynxpwywq7wi"]
+[gd_scene load_steps=9 format=3 uid="uid://mynxpwywq7wi"]
 
 [ext_resource type="Script" path="res://Scripts/player-.gd" id="1_8ntwr"]
 [ext_resource type="PackedScene" uid="uid://d1c1p0scto36d" path="res://Scenes/wheel.tscn" id="1_rqh6f"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://04w3sac38bh8" path="res://Audio/Background music/videogame-death-sound-43894.mp3" id="5_4o3g5"]
 [ext_resource type="PackedScene" uid="uid://1s8kf4fpifeg" path="res://Scenes/ouch.tscn" id="6_66800"]
 [ext_resource type="AudioStream" uid="uid://b8kiqc10b84l8" path="res://Audio/SFX/hit4.wav" id="7_a2fcb"]
+[ext_resource type="Texture2D" uid="uid://bb48qkk4xfhuq" path="res://Art/Models/Upgrade models/booster.png" id="8_k4b0m"]
 
 [node name="Player" type="RigidBody2D" groups=["Player"]]
 position = Vector2(-1, -12)
@@ -55,5 +56,10 @@ stream = ExtResource("5_4o3g5")
 
 [node name="barsound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_a2fcb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-125, -102)
+scale = Vector2(0.795918, 0.76987)
+texture = ExtResource("8_k4b0m")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -59,13 +59,11 @@ func _process(delta):
 		for wheel in wheels:
 			if wheel.angular_velocity > -max_speed:
 				wheel.apply_torque_impulse(-speed * delta * 60)
-	
-
-
 
 func _on_body_entered(body):
-	if (body.name == "Enemy"):
+	if "Enemy" in body.name:
+		body.queue_free()
 		$Ouch.play()
-	if(body.name == "Barrel"):
+	if "Barrel" in body.name:
+		body.queue_free()
 		$barsound.play()
-
