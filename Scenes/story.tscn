@@ -92,4 +92,20 @@ volume_db = -36.667
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("3_f2ywr")]
 
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 13.0
+offset_right = 963.0
+offset_bottom = 870.0
+theme_override_font_sizes/font_size = 12
+text = "In the year 2045, Earth faced its darkest hour – an invasion by extraterrestrial forces. Among the millions striving to survive, Tony, a humble mechanic with a knack for innovation, found himself thrust into a battle for humanity's survival. Tony wasn't a soldier or a scientist; he was just a guy who loved tinkering with cars. His garage was his sanctuary, filled with tools and spare parts, a testament to his passion for all things mechanical. Little did he know that his skills would soon be put to the ultimate test.
+
+As the alien ships descended upon Earth, Tony found himself stranded in the heart of a bustling metropolis, surrounded by chaos and destruction.  With his trusty old car, a relic from a bygone era, he navigated the war-torn streets, searching for a way to escape the alien onslaught. But Tony wasn't content to simply flee.  Deep down, he knew that he had a role to play in humanity's fight for survival. Drawing inspiration from the advanced technology of the invaders, he set out to upgrade his humble vehicle into a formidable weapon against the alien threat. Scavenging parts from wrecked spacecraft and salvaging advanced components from the debris-strewn streets, Tony transformed his car into a marvel of modern engineering. With each upgrade, he felt a sense of empowerment, a belief that he could make a difference in the war raging around him. Equipped with his newly enhanced vehicle, Tony embarked on a daring mission to escape the city and reach the safety of the countryside, where the military base was located.
+
+But the road ahead was fraught with danger, as alien patrols prowled the streets, searching for any sign of resistance. Using his ingenuity and resourcefulness, Tony outmaneuvered the enemy at every turn, employing his upgraded car's advanced capabilities to evade detection and overcome obstacles. With each passing mile, he drew closer to freedom, his determination unwavering in the face of overwhelming odds. But the aliens were relentless in their pursuit, their advanced technology posing a formidable challenge to Tony's makeshift vehicle. As he raced against time, he knew that he would have to push himself to the limit if he hoped to escape the clutches of the invaders and reach safety. In a final, desperate bid for freedom, Tony faced off against the alien forces in a heart-pounding showdown on the outskirts of the city. With his upgraded car pushed to its limits, he unleashed a barrage of high-tech weaponry, unleashing chaos upon his unsuspecting foes.
+
+In the end, it was Tony's ingenuity and determination that won the day, his makeshift vehicle proving more than a match for the alien invaders. As he sped off into the distance, leaving behind the wreckage of the battle, he knew that his journey was far from over."
+autowrap_mode = 2
+
 [connection signal="pressed" from="Button1" to="." method="_on_button_5_pressed"]
