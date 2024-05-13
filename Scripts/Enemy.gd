@@ -31,13 +31,13 @@ func _on_body_entered(body):
 	pass # Replace with function body.
 
 func on_hit():
-	health -= dmg + ((100 - dmg) / 100.0 * GlobalVariables.gun)
+	#health -= dmg + ((100 - dmg) / 100.0 * GlobalVariables.gun)
+	health -= dmg
 
 func _on_detection_area_body_entered(body):
 	player = body
 	player_chase = true
 	
-
 
 func _on_detection_area_body_exited(body):
 	player = null
