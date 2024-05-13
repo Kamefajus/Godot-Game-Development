@@ -24,7 +24,7 @@ font_names = PackedStringArray("Impact")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
 size = Vector2(523.147, 56.6124)
 
-[sub_resource type="Resource" id="Resource_2q6yp"]
+[sub_resource type="Resource" id="Resource_6002g"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -35,9 +35,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_2q6yp")
+properties = SubResource("Resource_6002g")
 
-[sub_resource type="Resource" id="Resource_5dj2h"]
+[sub_resource type="Resource" id="Resource_e3ybv"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -48,9 +48,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(538.363, 578.06)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_5dj2h")
+properties = SubResource("Resource_e3ybv")
 
-[sub_resource type="Resource" id="Resource_ig6jn"]
+[sub_resource type="Resource" id="Resource_mck7q"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -61,9 +61,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(526.349, 610.097)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_ig6jn")
+properties = SubResource("Resource_mck7q")
 
-[sub_resource type="Resource" id="Resource_0aupe"]
+[sub_resource type="Resource" id="Resource_k8id4"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -74,9 +74,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(490.309, 607.427)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_0aupe")
+properties = SubResource("Resource_k8id4")
 
-[sub_resource type="Resource" id="Resource_hohd5"]
+[sub_resource type="Resource" id="Resource_xn5cc"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -87,9 +87,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(165.942, 603.422)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_hohd5")
+properties = SubResource("Resource_xn5cc")
 
-[sub_resource type="Resource" id="Resource_crfg1"]
+[sub_resource type="Resource" id="Resource_wbuxw"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -100,7 +100,7 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_crfg1")
+properties = SubResource("Resource_wbuxw")
 
 [sub_resource type="Resource" id="Resource_v4jk1"]
 script = ExtResource("16_qfx7u")
@@ -377,11 +377,32 @@ offset_bottom = 23.0
 text = "You do not have the necessary amount of
 coins to buy this upgrade! (? is required)"
 
+[node name="PriceLabel" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+
 [connection signal="pressed" from="VBoxContainer2/Back_Button" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Armor/UpgradeArmorButton" to="." method="_on_upgrade_armor_button_mouse_entered"]
+[connection signal="mouse_exited" from="Armor/UpgradeArmorButton" to="." method="_on_upgrade_armor_button_mouse_exited"]
 [connection signal="pressed" from="Armor/UpgradeArmorButton" to="." method="_on_upgrade_armor_button_pressed"]
+[connection signal="mouse_entered" from="Booster/UpgradeBoosterButton" to="." method="_on_upgrade_booster_button_mouse_entered"]
+[connection signal="mouse_exited" from="Booster/UpgradeBoosterButton" to="." method="_on_upgrade_booster_button_mouse_exited"]
 [connection signal="pressed" from="Booster/UpgradeBoosterButton" to="." method="_on_upgrade_booster_button_pressed"]
+[connection signal="mouse_entered" from="Engine/UpgradeEngineButton" to="." method="_on_upgrade_engine_button_mouse_entered"]
+[connection signal="mouse_exited" from="Engine/UpgradeEngineButton" to="." method="_on_upgrade_engine_button_mouse_exited"]
 [connection signal="pressed" from="Engine/UpgradeEngineButton" to="." method="_on_upgrade_engine_button_pressed"]
+[connection signal="mouse_entered" from="Fuel/UpgradeFuelButton" to="." method="_on_upgrade_fuel_button_mouse_entered"]
+[connection signal="mouse_exited" from="Fuel/UpgradeFuelButton" to="." method="_on_upgrade_fuel_button_mouse_exited"]
 [connection signal="pressed" from="Fuel/UpgradeFuelButton" to="." method="_on_upgrade_fuel_button_pressed"]
+[connection signal="mouse_entered" from="Gun/UpgradeGunButton" to="." method="_on_upgrade_gun_button_mouse_entered"]
+[connection signal="mouse_exited" from="Gun/UpgradeGunButton" to="." method="_on_upgrade_gun_button_mouse_exited"]
 [connection signal="pressed" from="Gun/UpgradeGunButton" to="." method="_on_upgrade_gun_button_pressed"]
+[connection signal="mouse_entered" from="Weight/UpgradeWeightButton" to="." method="_on_upgrade_weight_button_mouse_entered"]
+[connection signal="mouse_exited" from="Weight/UpgradeWeightButton" to="." method="_on_upgrade_weight_button_mouse_exited"]
 [connection signal="pressed" from="Weight/UpgradeWeightButton" to="." method="_on_upgrade_weight_button_pressed"]
 [connection signal="close_requested" from="NotEnoughCoins" to="." method="_on_not_enough_coins_close_requested"]
