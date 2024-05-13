@@ -1,0 +1,95 @@
+[gd_scene load_steps=6 format=3 uid="uid://vfb5ijsia8bx"]
+
+[ext_resource type="Script" path="res://Story.gd" id="1_aa6e3"]
+[ext_resource type="Texture2D" uid="uid://c4hvxnkiy5pho" path="res://Art/OIG3 (1).jpg" id="2_t2owu"]
+[ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="3_f2ywr"]
+[ext_resource type="AudioStream" uid="uid://cd38cbclil7ka" path="res://Audio/SFX/select.wav" id="4_c8pte"]
+
+[sub_resource type="SystemFont" id="SystemFont_t1i8n"]
+font_names = PackedStringArray("Impact")
+
+[node name="Story" type="Control"]
+layout_mode = 3
+anchor_right = 1.044
+anchor_bottom = 1.082
+offset_right = -90.688
+offset_bottom = -120.136
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aa6e3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = -392.0
+offset_right = 48.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_t2owu")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer2" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer3" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer4" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer5" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer6" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer7" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="GridContainer8" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="Button1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 534.0
+offset_right = 231.0
+offset_bottom = 603.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_t1i8n")
+theme_override_font_sizes/font_size = 25
+text = "Back"
+
+[node name="Select" parent="." instance=ExtResource("3_f2ywr")]
+stream = ExtResource("4_c8pte")
+volume_db = -36.667
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_f2ywr")]
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_5_pressed"]

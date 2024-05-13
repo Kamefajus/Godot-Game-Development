@@ -164,7 +164,8 @@ text = "Back"
 [node name="Select" parent="." instance=ExtResource("4_m7l7h")]
 stream = ExtResource("5_poxti")
 volume_db = -36.667
-bus = &"Music"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("4_m7l7h")]
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

@@ -6,15 +6,18 @@
 resource_name = "Barrel"
 script/source = "extends RigidBody2D
 
+var barhp = 10
+var dmg = 10
 
 func _on_body_entered(body):
 	if (body.name == \"Player\"):
-		get_node(\".\").queue_free()
+		barhp -= dmg
+		if(barhp <= 0):
+			queue_free()
 	pass # Replace with function body.
-
 "
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="Barrel" type="RigidBody2D" groups=["Barrel"]]
 collision_layer = 3
 collision_mask = 3
 script = SubResource("GDScript_gn5u5")

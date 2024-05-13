@@ -23,6 +23,7 @@ func _process(delta):
 	if health <= 0 || fuel_level <= 0:
 		GlobalVariables.coins += coins
 		$"../GameOverMenu".enable()
+		$gg.play()
 		
 	current_velocity = wheels.pick_random().angular_velocity
 	
@@ -59,4 +60,12 @@ func _process(delta):
 			if wheel.angular_velocity > -max_speed:
 				wheel.apply_torque_impulse(-speed * delta * 60)
 	
+
+
+
+func _on_body_entered(body):
+	if (body.name == "Enemy"):
+		$Ouch.play()
+	if(body.name == "Barrel"):
+		$barsound.play()
 

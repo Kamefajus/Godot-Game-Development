@@ -36,8 +36,14 @@ func on_hit():
 func _on_detection_area_body_entered(body):
 	player = body
 	player_chase = true
+	
 
 
 func _on_detection_area_body_exited(body):
 	player = null
 	player_chase = false
+	
+
+
+func _on_ouch_finished():
+	pass # Replace with function body.

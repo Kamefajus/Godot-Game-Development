@@ -70,6 +70,7 @@ text = "Back"
 [node name="Select" parent="." instance=ExtResource("3_8tkqw")]
 stream = ExtResource("4_tomep")
 volume_db = -36.667
-bus = &"Music"
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("3_8tkqw")]
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

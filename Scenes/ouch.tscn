@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://1s8kf4fpifeg"]
+
+[ext_resource type="AudioStream" uid="uid://pykb6btj55nh" path="res://Audio/SFX/Ouch.mp3" id="1_7146d"]
+
+[node name="Ouch" type="AudioStreamPlayer"]
+stream = ExtResource("1_7146d")
+bus = &"Sfx"
