@@ -29,3 +29,7 @@ func _process(delta):
 	
 	get_node("./Progress").value = progress
 	get_node("./Fuel").value = fuel_level / fuel_capacity * 100
+	
+	get_node("./bullets").max_value = GlobalVariables.gun * 10
+	get_node("./bullets").value = $"../Player/Gun".bullets
+	get_node("./bullets/Label2").text = str($"../Player/Gun".bullets) + " / " + str(GlobalVariables.gun * 10)

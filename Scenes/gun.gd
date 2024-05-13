@@ -6,9 +6,11 @@ const delay = 30
 const remove = 1 # how many delay ms to remove, for each upgrade
 var curr_delay = 0
 var nearest
+var bullets = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	bullets = GlobalVariables.gun * 10
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -52,6 +54,9 @@ func _process(delta):
 	pass
 
 func shoot():
+	if (bullets == 0):
+		return
+		
 	var bullet = bulletPath.instantiate()
 	get_parent().add_child(bullet)
 	bullet.global_position = $Marker2D.global_position
@@ -70,4 +75,4 @@ func shoot():
 			$Shoot4.play()
 		5:
 			$Shoot5.play()
-	pass
+	bullets -= 1
