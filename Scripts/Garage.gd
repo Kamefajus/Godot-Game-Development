@@ -72,3 +72,52 @@ func _on_upgrade_weight_button_pressed():
 
 func _on_not_enough_coins_close_requested():
 	$NotEnoughCoins.hide()
+
+func _on_upgrade_armor_button_mouse_entered():
+	$PriceLabel.text = str((GlobalVariables.armor + 1) * 10) + "¢"
+	$PriceLabel.position = get_viewport().get_mouse_position() + Vector2(70, 10)
+	$PriceLabel.show()
+
+func _on_upgrade_armor_button_mouse_exited():
+	$PriceLabel.hide()
+
+func _on_upgrade_booster_button_mouse_entered():
+	$PriceLabel.text = str((GlobalVariables.booster + 1) * 10) + "¢"
+	$PriceLabel.position = get_viewport().get_mouse_position() + Vector2(70, 10)
+	$PriceLabel.show()
+
+func _on_upgrade_booster_button_mouse_exited():
+	$PriceLabel.hide()
+
+
+func _on_upgrade_engine_button_mouse_entered():
+	$PriceLabel.text = str((GlobalVariables.engine + 1) * 10) + "¢"
+	$PriceLabel.position = get_viewport().get_mouse_position() + Vector2(70, 10)
+	$PriceLabel.show()
+
+func _on_upgrade_engine_button_mouse_exited():
+	$PriceLabel.hide()
+
+func _on_upgrade_fuel_button_mouse_entered():
+	$PriceLabel.text = str((GlobalVariables.fuel + 1) * 10) + "¢"
+	$PriceLabel.position = get_viewport().get_mouse_position() + Vector2(70, 10)
+	$PriceLabel.show()
+
+func _on_upgrade_fuel_button_mouse_exited():
+	$PriceLabel.hide()
+
+func _on_upgrade_gun_button_mouse_entered():
+	$PriceLabel.text = str((GlobalVariables.gun + 1) * 10) + "¢"
+	$PriceLabel.position = get_viewport().get_mouse_position() + Vector2(70, 10)
+	$PriceLabel.show()
+
+func _on_upgrade_gun_button_mouse_exited():
+	$PriceLabel.hide()
+
+func _on_upgrade_weight_button_mouse_entered():
+	$PriceLabel.text = str((GlobalVariables.weight + 1) * 10) + "¢"
+	$PriceLabel.position = get_viewport().get_mouse_position() + Vector2(70, 10)
+	$PriceLabel.show()
+
+func _on_upgrade_weight_button_mouse_exited():
+	$PriceLabel.hide()
