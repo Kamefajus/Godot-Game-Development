@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bybr0r24rgsqu"
+path="res://.godot/imported/tiktok aughhh sound effect (abnormally goofy ahh) (320).mp3-18de7e4a344091eb28cbc3d32d23291b.mp3str"
+
+[deps]
+
+source_file="res://Audio/SFX/tiktok aughhh sound effect (abnormally goofy ahh) (320).mp3"
+dest_files=["res://.godot/imported/tiktok aughhh sound effect (abnormally goofy ahh) (320).mp3-18de7e4a344091eb28cbc3d32d23291b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

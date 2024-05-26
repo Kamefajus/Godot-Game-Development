@@ -1,13 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://mynxpwywq7wi"]
+[gd_scene load_steps=11 format=3 uid="uid://mynxpwywq7wi"]
 
 [ext_resource type="Script" path="res://Scripts/player-.gd" id="1_8ntwr"]
 [ext_resource type="PackedScene" uid="uid://d1c1p0scto36d" path="res://Scenes/wheel.tscn" id="1_rqh6f"]
 [ext_resource type="PackedScene" uid="uid://g1sk5dt552nc" path="res://Scenes/gun.tscn" id="2_w8yh8"]
 [ext_resource type="Texture2D" uid="uid://cnv7aliiogdn7" path="res://Art/Images/Car/RedCar.png" id="3_jpo42"]
-[ext_resource type="AudioStream" uid="uid://04w3sac38bh8" path="res://Audio/Background music/videogame-death-sound-43894.mp3" id="5_4o3g5"]
-[ext_resource type="PackedScene" uid="uid://1s8kf4fpifeg" path="res://Scenes/ouch.tscn" id="6_66800"]
+[ext_resource type="AudioStream" path="res://Audio/Background music/videogame-death-sound-43894.mp3" id="5_4o3g5"]
+[ext_resource type="PackedScene" path="res://Scenes/ouch.tscn" id="6_66800"]
 [ext_resource type="AudioStream" uid="uid://b8kiqc10b84l8" path="res://Audio/SFX/hit4.wav" id="7_a2fcb"]
+[ext_resource type="AudioStream" uid="uid://bybr0r24rgsqu" path="res://Audio/SFX/tiktok aughhh sound effect (abnormally goofy ahh) (320).mp3" id="7_k34wi"]
 [ext_resource type="Texture2D" uid="uid://bb48qkk4xfhuq" path="res://Art/Models/Upgrade models/booster.png" id="8_k4b0m"]
+[ext_resource type="AudioStream" uid="uid://lq11nyoud8gp" path="res://Audio/SFX/engine-47745.mp3" id="10_sd8ce"]
 
 [node name="Player" type="RigidBody2D" groups=["Player"]]
 position = Vector2(-1, -12)
@@ -42,7 +44,7 @@ scale = Vector2(0.775, 0.775)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(1, -60)
-polygon = PackedVector2Array(-151, -52, -137, -64, -83, -66, -53, -43, 1, -43, 18, -64, 77, -59, 117, -49, 149, -36, 171, -26, 173, 33, 175, 36, 175, 51, 173, 54, 119, 54, 117, 30, 100, 18, 84, 19, 72, 29, 69, 43, 68, 52, -72, 54, -78, 29, -97, 18, -115, 25, -123, 39, -124, 52, -158, 54, -157, 35, -152, 35)
+polygon = PackedVector2Array(-151, -52, -137, -64, -83, -66, -53, -43, 1, -43, 18, -64, 77, -59, 117, -49, 149, -36, 174, -26, 175, 33, 177, 38, 177, 53, 173, 54, 120, 54, 117, 30, 100, 18, 84, 19, 72, 29, 69, 43, 68, 53, -72, 53, -77, 29, -97, 18, -115, 25, -123, 39, -123, 54, -158, 54, -157, 35, -152, 35)
 
 [node name="car" type="Sprite2D" parent="CollisionPolygon2D"]
 position = Vector2(15, -20)
@@ -53,6 +55,8 @@ texture = ExtResource("3_jpo42")
 stream = ExtResource("5_4o3g5")
 
 [node name="Ouch" parent="." instance=ExtResource("6_66800")]
+stream = ExtResource("7_k34wi")
+volume_db = -22.286
 
 [node name="barsound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_a2fcb")
@@ -61,5 +65,11 @@ stream = ExtResource("7_a2fcb")
 position = Vector2(-125, -102)
 scale = Vector2(0.795918, 0.76987)
 texture = ExtResource("8_k4b0m")
+
+[node name="EngineSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_sd8ce")
+volume_db = -16.857
+autoplay = true
+bus = &"Sfx"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -15,9 +15,11 @@ var current_velocity = 0
 var can_boost = true
 var boost_duration = 2
 var boost_timer = 0
+var driving = 0
 
 func _ready():
 	wheels = get_tree().get_nodes_in_group("wheel")
+	$EngineSFX.play()
 
 func _process(delta):
 	if health <= 0 || fuel_level <= 0:
@@ -47,6 +49,8 @@ func _process(delta):
 		can_boost = false
 		
 	if Input.is_action_pressed("move_right"):
+		driving = 1
+		_update_engine_sound(delta)
 		if !Input.is_action_pressed("move_left"):
 			fuel_level -= abs(current_velocity) * fuel_decrease_rate
 		for wheel in wheels:
@@ -54,16 +58,33 @@ func _process(delta):
 				wheel.apply_torque_impulse(speed * delta * 60)
 	
 	if Input.is_action_pressed("move_left"):
+		driving = 1
+		_update_engine_sound(delta)
 		if !Input.is_action_pressed("move_right"):
 			fuel_level -= abs(current_velocity) * fuel_decrease_rate
 		for wheel in wheels:
 			if wheel.angular_velocity > -max_speed:
 				wheel.apply_torque_impulse(-speed * delta * 60)
+	if !Input.is_action_pressed("move_left"):
+		driving = 2
+		_update_engine_sound(delta)
+	if !Input.is_action_pressed("move_right"):
+		driving = 2
+		_update_engine_sound(delta)
+	
+func _update_engine_sound(delta):
+	if driving == 1:
+		$EngineSFX.pitch_scale = lerp($EngineSFX.pitch_scale, 2.0, 2.0 * delta)
+	if driving == 2:
+		$EngineSFX.pitch_scale = lerp($EngineSFX.pitch_scale, 1.0, 2.0 * delta)
 
 func _on_body_entered(body):
 	if "Enemy" in body.name:
 		body.queue_free()
 		$Ouch.play()
+		$EngineSFX.play()
 	if "Barrel" in body.name:
 		body.queue_free()
-		$barsound.play()
+		$barsound
+		$EngineSFX.play()
+

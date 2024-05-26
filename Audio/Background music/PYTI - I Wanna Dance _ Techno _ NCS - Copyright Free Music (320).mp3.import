@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1kvjnbc1qd5h"
+path="res://.godot/imported/PYTI - I Wanna Dance _ Techno _ NCS - Copyright Free Music (320).mp3-133fe856211a58178f5e97e450319fdc.mp3str"
+
+[deps]
+
+source_file="res://Audio/Background music/PYTI - I Wanna Dance _ Techno _ NCS - Copyright Free Music (320).mp3"
+dest_files=["res://.godot/imported/PYTI - I Wanna Dance _ Techno _ NCS - Copyright Free Music (320).mp3-133fe856211a58178f5e97e450319fdc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
