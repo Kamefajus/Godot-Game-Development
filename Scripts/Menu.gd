@@ -16,6 +16,7 @@ func _on_settings_pressed():
 
 func _on_quit_pressed():
 	$Select.play()
+	GlobalVariables.save()
 	get_tree().quit() 
 
 func _on_upgrades_pressed():
@@ -28,7 +29,7 @@ func _on_transition_animation_finished(anim_name):
 
 func _on_music_pressed():
 	AudioServer.set_bus_mute(music_bus, not AudioServer.is_bus_mute(music_bus))
-
+	GlobalVariables.save()
 
 func _on_story_pressed():
 	get_tree().change_scene_to_file("res://Scenes/story.tscn")
