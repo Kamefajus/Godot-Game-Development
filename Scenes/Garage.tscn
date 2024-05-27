@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://jwdebifbdgfi"]
+[gd_scene load_steps=47 format=3 uid="uid://jwdebifbdgfi"]
 
 [ext_resource type="Script" path="res://Scripts/Garage.gd" id="1_5hmaa"]
 [ext_resource type="Texture2D" uid="uid://chgvfipvqotos" path="res://Art/shachar-tzin-garage-background-color.jpg" id="2_7fff5"]
@@ -17,6 +17,7 @@
 [ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point.gd" id="15_omjlr"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/shapes/point_array.gd" id="16_qfx7u"]
 [ext_resource type="Script" path="res://addons/rmsmartshape/materials/shape_material.gd" id="17_2yln7"]
+[ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="18_g3vb8"]
 
 [sub_resource type="SystemFont" id="SystemFont_e4uvf"]
 font_names = PackedStringArray("Impact")
@@ -55,7 +56,7 @@ bg_color = Color(0, 1, 0, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
 size = Vector2(523.147, 56.6124)
 
-[sub_resource type="Resource" id="Resource_yxge8"]
+[sub_resource type="Resource" id="Resource_pvjvu"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -66,9 +67,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_yxge8")
+properties = SubResource("Resource_pvjvu")
 
-[sub_resource type="Resource" id="Resource_6b4hi"]
+[sub_resource type="Resource" id="Resource_4r4kw"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -79,9 +80,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(538.363, 578.06)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_6b4hi")
+properties = SubResource("Resource_4r4kw")
 
-[sub_resource type="Resource" id="Resource_knahm"]
+[sub_resource type="Resource" id="Resource_4wvsq"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -92,9 +93,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(526.349, 610.097)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_knahm")
+properties = SubResource("Resource_4wvsq")
 
-[sub_resource type="Resource" id="Resource_dgbvi"]
+[sub_resource type="Resource" id="Resource_h0f8d"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -105,9 +106,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(490.309, 607.427)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_dgbvi")
+properties = SubResource("Resource_h0f8d")
 
-[sub_resource type="Resource" id="Resource_1s4ss"]
+[sub_resource type="Resource" id="Resource_cr6qn"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -118,9 +119,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(165.942, 603.422)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_1s4ss")
+properties = SubResource("Resource_cr6qn")
 
-[sub_resource type="Resource" id="Resource_yneeu"]
+[sub_resource type="Resource" id="Resource_tityj"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -131,7 +132,7 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_yneeu")
+properties = SubResource("Resource_tityj")
 
 [sub_resource type="Resource" id="Resource_v4jk1"]
 script = ExtResource("16_qfx7u")
@@ -453,6 +454,8 @@ offset_bottom = 23.0
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 12
+
+[node name="AudioStreamPlayer" parent="." instance=ExtResource("18_g3vb8")]
 
 [connection signal="pressed" from="VBoxContainer2/Back_Button" to="." method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Armor/UpgradeArmorButton" to="." method="_on_upgrade_armor_button_mouse_entered"]

@@ -31,6 +31,13 @@ func _process(delta):
 	
 	if GlobalVariables.booster != 0:
 		$Sprite2D.visible=true
+	else:
+		$Sprite2D.visible=false
+		
+	if GlobalVariables.armor != 0:
+		$Sprite2D2.visible=true
+	else:
+		$Sprite2D2.visible=false
 	
 	if can_boost && GlobalVariables.booster != 0:
 		$"../GUI/boost".value = 100
