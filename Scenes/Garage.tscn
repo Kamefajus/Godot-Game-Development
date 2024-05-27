@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://jwdebifbdgfi"]
+[gd_scene load_steps=46 format=3 uid="uid://jwdebifbdgfi"]
 
 [ext_resource type="Script" path="res://Scripts/Garage.gd" id="1_5hmaa"]
 [ext_resource type="Texture2D" uid="uid://chgvfipvqotos" path="res://Art/shachar-tzin-garage-background-color.jpg" id="2_7fff5"]
@@ -21,10 +21,41 @@
 [sub_resource type="SystemFont" id="SystemFont_e4uvf"]
 font_names = PackedStringArray("Impact")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vvwu5"]
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5xdi"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sq8k3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f74b2"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4evtl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6stgn"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xk2dl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bgxh1"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2x562"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fk20x"]
+bg_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qju0q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_guujf"]
+bg_color = Color(0, 1, 0, 1)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uehly"]
 size = Vector2(523.147, 56.6124)
 
-[sub_resource type="Resource" id="Resource_s0mcq"]
+[sub_resource type="Resource" id="Resource_yxge8"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -35,9 +66,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_s0mcq")
+properties = SubResource("Resource_yxge8")
 
-[sub_resource type="Resource" id="Resource_andre"]
+[sub_resource type="Resource" id="Resource_6b4hi"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -48,9 +79,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(538.363, 578.06)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_andre")
+properties = SubResource("Resource_6b4hi")
 
-[sub_resource type="Resource" id="Resource_ornrq"]
+[sub_resource type="Resource" id="Resource_knahm"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -61,9 +92,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(526.349, 610.097)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_ornrq")
+properties = SubResource("Resource_knahm")
 
-[sub_resource type="Resource" id="Resource_aifnr"]
+[sub_resource type="Resource" id="Resource_dgbvi"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -74,9 +105,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(490.309, 607.427)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_aifnr")
+properties = SubResource("Resource_dgbvi")
 
-[sub_resource type="Resource" id="Resource_oy5l5"]
+[sub_resource type="Resource" id="Resource_1s4ss"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -87,9 +118,9 @@ script = ExtResource("15_omjlr")
 position = Vector2(165.942, 603.422)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_oy5l5")
+properties = SubResource("Resource_1s4ss")
 
-[sub_resource type="Resource" id="Resource_l82ir"]
+[sub_resource type="Resource" id="Resource_yneeu"]
 script = ExtResource("14_ksnop")
 texture_idx = 0
 flip = false
@@ -100,7 +131,7 @@ script = ExtResource("15_omjlr")
 position = Vector2(127.232, 576.726)
 point_in = Vector2(0, 0)
 point_out = Vector2(0, 0)
-properties = SubResource("Resource_l82ir")
+properties = SubResource("Resource_yneeu")
 
 [sub_resource type="Resource" id="Resource_v4jk1"]
 script = ExtResource("16_qfx7u")
@@ -178,17 +209,24 @@ scale = Vector2(0.75, 0.75)
 texture = ExtResource("6_3lqao")
 
 [node name="ProgressBar" type="ProgressBar" parent="Armor"]
-offset_left = -1.33333
-offset_top = 50.0
-offset_right = 2.66667
-offset_bottom = 77.0
+anchors_preset = -1
+anchor_left = -0.973142
+anchor_top = -0.000789292
+anchor_right = -0.0271957
+anchor_bottom = -0.000789253
+offset_left = 53.0187
+offset_top = 56.0774
+offset_right = 57.0187
+offset_bottom = 83.0773
+theme_override_styles/background = SubResource("StyleBoxFlat_vvwu5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_w5xdi")
 metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeArmorButton" type="TextureButton" parent="Armor"]
-offset_left = 22.6667
-offset_top = 53.3335
-offset_right = 252.667
-offset_bottom = 272.333
+offset_left = 58.0
+offset_top = 58.0
+offset_right = 288.0
+offset_bottom = 277.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("7_fl0yd")
 texture_hover = ExtResource("8_6hhpe")
@@ -206,17 +244,23 @@ scale = Vector2(0.75, 0.75)
 texture = ExtResource("7_ub38s")
 
 [node name="ProgressBar" type="ProgressBar" parent="Booster"]
-offset_top = 50.0
-offset_right = 4.0
-offset_bottom = 77.0
+anchors_preset = -1
+anchor_left = -0.0816327
+anchor_right = 0.969388
+offset_left = -44.0
+offset_top = 56.0
+offset_right = -40.0
+offset_bottom = 83.0
+theme_override_styles/background = SubResource("StyleBoxFlat_sq8k3")
+theme_override_styles/fill = SubResource("StyleBoxFlat_f74b2")
 step = 1.0
 metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeBoosterButton" type="TextureButton" parent="Booster"]
-offset_left = 22.6667
-offset_top = 53.3335
-offset_right = 252.667
-offset_bottom = 272.333
+offset_left = 60.0
+offset_top = 58.0
+offset_right = 290.0
+offset_bottom = 277.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("7_fl0yd")
 texture_hover = ExtResource("8_6hhpe")
@@ -234,16 +278,22 @@ scale = Vector2(0.75, 0.75)
 texture = ExtResource("8_0fbsn")
 
 [node name="ProgressBar" type="ProgressBar" parent="Engine"]
-offset_top = 50.0
-offset_right = 4.0
-offset_bottom = 77.0
+anchors_preset = -1
+anchor_left = -0.133858
+anchor_right = 0.692913
+offset_left = -44.0
+offset_top = 58.0
+offset_right = -40.0
+offset_bottom = 85.0
+theme_override_styles/background = SubResource("StyleBoxFlat_4evtl")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6stgn")
 metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeEngineButton" type="TextureButton" parent="Engine"]
-offset_left = 22.6667
-offset_top = 53.3335
-offset_right = 252.667
-offset_bottom = 272.333
+offset_left = 52.017
+offset_top = 59.0
+offset_right = 282.017
+offset_bottom = 278.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("7_fl0yd")
 texture_hover = ExtResource("8_6hhpe")
@@ -256,21 +306,27 @@ offset_bottom = -25.0
 text = "Engine"
 
 [node name="Fuel" type="Sprite2D" parent="."]
-position = Vector2(1119.09, 185.485)
+position = Vector2(1119.09, 188)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("9_acimn")
 
 [node name="ProgressBar" type="ProgressBar" parent="Fuel"]
-offset_top = 50.0
-offset_right = 4.0
-offset_bottom = 77.0
+anchors_preset = -1
+anchor_left = -0.106557
+anchor_right = 0.819672
+offset_left = -44.0
+offset_top = 56.0
+offset_right = -40.0
+offset_bottom = 83.0
+theme_override_styles/background = SubResource("StyleBoxFlat_xk2dl")
+theme_override_styles/fill = SubResource("StyleBoxFlat_bgxh1")
 metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeFuelButton" type="TextureButton" parent="Fuel"]
-offset_left = 22.6667
-offset_top = 53.3335
-offset_right = 252.667
-offset_bottom = 272.333
+offset_left = 64.0
+offset_top = 58.0
+offset_right = 294.0
+offset_bottom = 277.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("7_fl0yd")
 texture_hover = ExtResource("8_6hhpe")
@@ -283,21 +339,27 @@ offset_bottom = -23.0
 text = "Fuel"
 
 [node name="Gun" type="Sprite2D" parent="."]
-position = Vector2(1126.16, 355.191)
+position = Vector2(1126.16, 347)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("10_pomkl")
 
 [node name="ProgressBar" type="ProgressBar" parent="Gun"]
-offset_top = 50.0
-offset_right = 4.0
-offset_bottom = 77.0
+anchors_preset = -1
+anchor_left = -0.184874
+anchor_right = 0.756303
+offset_left = -44.0
+offset_top = 56.0
+offset_right = -40.0
+offset_bottom = 83.0
+theme_override_styles/background = SubResource("StyleBoxFlat_2x562")
+theme_override_styles/fill = SubResource("StyleBoxFlat_fk20x")
 metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeGunButton" type="TextureButton" parent="Gun"]
-offset_left = 22.6667
-offset_top = 53.3335
-offset_right = 252.667
-offset_bottom = 272.333
+offset_left = 54.0
+offset_top = 58.0
+offset_right = 284.0
+offset_bottom = 277.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("7_fl0yd")
 texture_hover = ExtResource("8_6hhpe")
@@ -310,21 +372,27 @@ offset_bottom = -25.0
 text = "Gun"
 
 [node name="Weight" type="Sprite2D" parent="."]
-position = Vector2(1126.16, 514.997)
+position = Vector2(1126.16, 515)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("11_mhw4i")
 
 [node name="ProgressBar" type="ProgressBar" parent="Weight"]
-offset_top = 50.0
-offset_right = 4.0
-offset_bottom = 77.0
+anchors_preset = -1
+anchor_left = -0.222222
+anchor_right = 0.929293
+offset_left = -44.0
+offset_top = 56.0
+offset_right = -40.0
+offset_bottom = 83.0
+theme_override_styles/background = SubResource("StyleBoxFlat_qju0q")
+theme_override_styles/fill = SubResource("StyleBoxFlat_guujf")
 metadata/_edit_use_anchors_ = true
 
 [node name="UpgradeWeightButton" type="TextureButton" parent="Weight"]
-offset_left = 22.6667
-offset_top = 53.3335
-offset_right = 252.667
-offset_bottom = 272.333
+offset_left = 54.0
+offset_top = 58.0
+offset_right = 284.0
+offset_bottom = 277.0
 scale = Vector2(0.1, 0.1)
 texture_normal = ExtResource("7_fl0yd")
 texture_hover = ExtResource("8_6hhpe")
