@@ -11,6 +11,7 @@ var input_actions = {
 	"move_right": "Forward",
 	"move_left": "Backward",
 	"shoot": "Shoot",
+	"boost": "Boost",
 }
 
 func _ready():

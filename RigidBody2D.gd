@@ -3,7 +3,7 @@ extends RigidBody2D
 @export var speed = 125
 var player_chase = false
 var player = null
-var dmg = 10
+var dmg = 15
 var health = 100
 
 func _physics_process(delta):
@@ -34,16 +34,16 @@ func on_hit():
 	#health -= dmg + ((100 - dmg) / 100.0 * GlobalVariables.gun)
 	health -= dmg
 
-func _on_detection_area_body_entered(body):
-	player = body
-	player_chase = true
-	
-
-func _on_detection_area_body_exited(body):
-	player = null
-	player_chase = false
-	
-
 
 func _on_ouch_finished():
 	pass # Replace with function body.
+
+
+func _on_area_2d_body_entered(body):
+		player = body
+		player_chase = true
+
+
+func _on_area_2d_body_exited(body):
+	player = null
+	player_chase = false

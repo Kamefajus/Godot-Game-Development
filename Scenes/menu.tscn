@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpskvver0df1c"]
+[gd_scene load_steps=8 format=3 uid="uid://dpskvver0df1c"]
 
 [ext_resource type="Script" path="res://Scripts/Menu.gd" id="1_cogtd"]
 [ext_resource type="Texture2D" uid="uid://c4hvxnkiy5pho" path="res://Art/OIG3 (1).jpg" id="2_maeap"]
 [ext_resource type="Texture2D" uid="uid://dk8wkuho2kva" path="res://Art/Models/sound-speaker-icon-on-white-background-free-vector.png" id="3_mcf6i"]
 [ext_resource type="PackedScene" uid="uid://c1pw2sgpv18vm" path="res://fonine_menu_music.tscn" id="4_t0fos"]
 [ext_resource type="AudioStream" uid="uid://cd38cbclil7ka" path="res://Audio/SFX/select.wav" id="5_yjp80"]
+
+[sub_resource type="SystemFont" id="SystemFont_v51m4"]
+font_names = PackedStringArray("Impact")
 
 [sub_resource type="SystemFont" id="SystemFont_3hy6a"]
 font_names = PackedStringArray("Impact")
@@ -32,6 +35,20 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_maeap")
 metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 512.0
+offset_top = 86.0
+offset_right = 673.0
+offset_bottom = 199.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = SubResource("SystemFont_v51m4")
+theme_override_font_sizes/font_size = 40
+text = "   Galaxy 
+ getaway
+"
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -87,6 +104,9 @@ theme_override_constants/outline_size = 12
 theme_override_fonts/font = SubResource("SystemFont_3hy6a")
 text = "Music"
 icon = ExtResource("3_mcf6i")
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
 
 [node name="AudioStreamPlayer" parent="." instance=ExtResource("4_t0fos")]
 
