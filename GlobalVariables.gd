@@ -26,6 +26,10 @@ func save():
 	file.store_var(gun)
 	file.store_var(weight)
 	file.store_var(levels_unlocked)
+	file.store_var(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master")))
+	file.store_var(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Music")))
+	file.store_var(AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Sfx")))
+	file.store_var(AudioServer.is_bus_mute(AudioServer.get_bus_index("Music")))
 	file.close()
 
 func load():
@@ -45,6 +49,10 @@ func load():
 		gun = file.get_var()
 		weight = file.get_var()
 		levels_unlocked = file.get_var()
+		AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), file.get_var())
+		AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), file.get_var())
+		AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sfx"), file.get_var())
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), file.get_var())
 
 func reset():
 	InputMap.load_from_project_settings()
@@ -56,5 +64,9 @@ func reset():
 	gun = 0
 	weight = 0
 	levels_unlocked = 1
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), 100)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), 100)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Sfx"), 100)
+	AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), false)
 	save()
 
